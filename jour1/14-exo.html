@@ -1,0 +1,71 @@
+<!-- 
+    créer le fichier 14-exo.html
+    structure et balise script
+
+    Cette balise script contient 3 variables :
+
+        a ayant la valeur 12
+        b ayant la valeur 0
+        c ayant la valeur -2,5
+
+    effectuer les calculs suivants et afficher leurs résultats dans la console
+        a / c
+        a * c + a
+        a * (c + a)
+        a / b
+        c / b
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 12 ;
+        let b = 0 ;
+        let c = -2.5;
+
+        // deux manières possibles pour afficher les résultats
+
+        // 1ère manière
+        // créer une variable intermédiaire
+        let calcul1 = a / c ; // calcul1 contient le résultat du calcul
+        console.log(calcul1);
+
+        // 2ème manière de faire : mettre le calcul à effectuer
+        // directement dans le console.log()
+        console.log( a / c ) ;
+        // avantage de la dernière manière d'écrire => plus rapide 
+
+        console.log( a * c + a) ; // -18
+        // vu qu'il n'y a pas de parenthèse c'est la multiplication
+        // qui est prioritaire 
+
+        console.log( a * (c + a) );  // 114 
+        // attention les parenthèses permettent de définir
+        // quels sont les calculs priorités (d'abord)
+        // d'abord l'addition puis la multiplication
+
+        console.log( a / b ); // Infinity
+        //          12 / 0 = + infini
+
+        console.log( c / b ); // -Infinity
+        //          -2.5 / 0 = - infini
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer le fichier 15-exo.html
+
+    une variable aire = la surface d'une cercle de rayon 5 
+    rappel l'aire PI x rayon x rayon 
+    afficher le résultat dans la console
+
+    PHP => à partir du 12 octobre
+    
+-->
