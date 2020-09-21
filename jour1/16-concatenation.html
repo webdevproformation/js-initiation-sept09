@@ -1,0 +1,95 @@
+<!-- 
+    16-concatenation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // lorsque l'on a des variables de type number
+        // il est possible d'effectuer des calculs 
+
+        // sachez qu'en informatique, on peut additionner des chaines
+        // de caractères 
+        let prenom = "Victor";
+        let nom = "Hugo" ; 
+        // aucun problème en informatique pour réaliser le calcul 
+        // suivant 
+
+        let nomComplet = prenom + nom ; 
+        //             = "Victor" + "Hugo" 
+        //             =  "VictorHugo" ;
+        console.log(nomComplet);
+
+        // addition => entre deux nombres
+        // concaténation => additions entre deux chaines
+        // de caractères 
+        // concaténation et non cancaténation
+
+        // j'ai deux variables 
+        let formation = "Javascript" ;
+        let version = "version 2015";
+        // je veux afficher dans la console le texte suivant
+        // Javascript version 2015
+        // comment le faire en utilisant les deux variables
+        // précédentes ?? 
+        // directement à la suite 
+
+        // 1ère manière de faire 
+
+        let texteComplet = formation + " " + version;
+        console.log(texteComplet);
+
+        console.log(formation , version);
+        // ça ressemble beaucoup mais en fait
+        // c'est pas bon 
+
+        // 2ème solution possible 
+        console.log(formation + " " + version) ;
+
+        // 3ème solution : modifier le contenu 
+        // variable en ajoutant un espace dedans
+
+        // "texte " + " " + " fpfjpefjpeij"
+        // syntaxe version5 de javascript
+        // version 6 javascript nouvelle manière de faire de la 
+        // concaténation
+
+
+        let email = "alain@yahoo.fr";
+        let role = "administrateur" ;
+
+        // je veux écrire dans ma console le texte suivant 
+
+        // cas pratique pouvez vous écrire la phrase suivante
+        // dans la console (concaténation) et les deux variables :
+
+        // alain@yahoo.fr est l'administrateur du site internet 
+
+        let message = email + " est l'" + role + " du site internet";
+        console.log(message);
+
+        // méthode jusqu'à la version 5 de javascript
+        // à partir de la version 6 => nouvelle manière de faire 
+        // plus rapide 
+
+        // au lieu d'utiliser "" délimiteur de chaine 
+        // caractère => `` accent grave  / backticks
+        // windows : AltGr + touche 7 (en haut)
+        // mac OS : 
+        let message2 = `${email} est l' ${role} du site internet`; 
+
+        // nouvelle syntaxe en version 6 de js 
+        // template string 
+        // vous ne pouvez pas utiliser ${} dans des " "
+        // plus rapide à écrire pas besoin des + 
+        console.log(message2);
+        // PHP twig {{ }}
+        // js => mustache {{ }}
+    </script>
+</body>
+</html>
