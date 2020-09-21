@@ -1,0 +1,105 @@
+
+Malik HARRIZ
+
+malik.h@webdevpro.net
+
+-----------------------
+
+Initiation Javascript + DOM
+
+-----------------------
+
+support disponible sur internet : 
+
+url : https://formation.webdevpro.net/js-initiation (à saisir dans la barre d'adresse / pas dans Google)
+login : java
+mot de passe : script 
+
+(attention saisir les mots de passe en minuscules)
+
+--------------------------
+
+Version pdf téléchargeable du site => dans le menu "Version Papier"
+
+--------------------------
+
+Qui a déjà fait des sites internet ?? qui a déjà utilisé javascript ??
+
+=> de vous apprendre les concepts de base de ce nouveau langage 
+
+--------------------------
+
+support de cours => fil conducteur pour vous apprendre Javascript 
+
+plein de choses à lire / lien / exos / corrigé dans le site internet 
+
+suivre cette trame pour vous former sur Javascript 
+
+
+--------------------------
+
+Dans votre ordinateur (sur le bureau) créer un dossier 
+Javascript
+
+dans ce dossier créer un sous dossier => jour1
+
+pour ne pas vous perdre => je vous propose de vous organiser 
+via des dossiers / fichiers 
+
+créer sur le bureau un dossier javascript
+dans ce dossier créer un sous dossier jour1 => tout ce que l'on va faire aujourd'hui
+
+va être rangé dans ce dossier
+
+EN + du site internet de support de cours 
+une petite organisation dossier Javascript / jour1 
+pour demain jour2 
+pour jour3 ....
+
+--------------------------
+
+dans votre dossier jour1, créer votre premier fichier 
+01-historique.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5957935687
+
+798776

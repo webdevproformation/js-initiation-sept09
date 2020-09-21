@@ -1,0 +1,145 @@
+
+Javascript => Langage créé en 1995 (bien 20 ans)
+
+=>  Brendan EICH
+
+=> ce langage a été créé à la base juste pour 
+traiter 
+
+=> dans les années 90, début internet 
+=> super pratique => formulaire papier // formulaire électronique
+=> donne des formulaires => les gens ne remplissent le formulaire
+convenablement 
+
+=> javascript LA SOLUTION pour donner des informations
+aux utilisateurs pour bien remplir leur formulaire
+
+=> son fondateur, lorsqu'il a créé le langage, un petit langage
+pour gérer / aider dans certaine situation 
+
+=> 2000 (bulle internet => compagnie qui travaille sur internet
+qui commence à réunir énormément d'argent 
+Yahoo / Google / Internet Explorer 
+)
+=> les particuliers et les entreprises utilisent 
+beaucoup plus souvent internet 
+
+
+=> disposent d'ingénieurs qui vont améliorer le langage Javascript
+
+=> Facebook => repensent les usages d'internet et font évoluer 
+le langage javascript
+
+=> librairie => jQuery est une librairie javascript 
+qui est une pierre ANGULAIRE dans tous les sites internet 
+changer la manière de pensée et de faire des sites internet 
+
+--------------------------
+
+EN 1995 et aujourd'hui => le langage a beaucoup évoluer 
+=> uniquement pour donner des informations sur des formulaires
+
+=> aujourd'hui vous pouvez réaliser INTEGRALEMENT un site internet
+en javascript (qui seul)
+
+=> très populaire 
+=> beaucoup de concepts à apprendre pour le maitriser 
+=> 
+
+=> en cours => version 5 et 6 du langage 
+=> ces deux versions sont comprises par tous 
+les navigateurs 
+
+----------
+
+Avant le site Facebook => wall d'accueil // wall perso 
+
+usage 
+wall d'accueil => page infinie // like // icone => AJAX 
+
+=> jquery => super mais pour leur besoin limité
+=> React.js  => nouvelle manière de penser comment coder en javascript
+open source =>
+
+=> Google 
+=> jquery => super mais pour leur besoin limité
+=> Angular + Typescript => nouvelle manière de penser comment coder en javascript
+
+---------------------------------
+
+Nous verrons en cours :
+
+la version 5 et 6 du langage javascript 
+version de base == version vanille 
+Vanilla Javascript 5 et 6 => en 2020 
+
+jeu / analyser un site / graphique / formule / tableau 
+=> le fait que vous site internet s'adapte au support qui le lit : ordinateur 
+smartphone (responsive design == côté css que cet aspect est géré)
+
+---------------------------------
+
+Javascript est une Langage CLIENT 
+
+=> Javascript est exécuté dans le navigateur c'est à dire que
+Javascript est exécuté dans Firefox / Chrome / Internet Explorer / Safari
+Edge 
+
+=> directement votre navigateur qui va comprendre ce langage 
+
+Javascript est langage qui va collaborer / interagir avec le HTML et le CSS
+
+Avec Javascript, vous allez pouvoir générer du HTML et du CSS 
+
+HTML et CSS sont eux aussi des langages CLIENT (dans Firefox / Chrome / 
+Internet Explorer / Safari Edge )
+
+---------------------------------
+
+Outil pour coder javascript 
+
+=> il existe plein d'outils pour coder en javascript 
+
+    Notepad++
+    Sublim Text
+    Atom
+    Bracket 
+    .... 
+    Visual Studio Code
+
+l'outil que je vais utiliser pour coder => Visual Studio Code
+l'outil à la mode actuellement 
+
+=> pouvez installer Visual Studio Code ? 
+=> tout le monde a le même environnement de travail que le professeur 
+=> Sublim Text / Bracket / Notepad++
+
+=> Qui n'a pas Visual Studio Code sur son ordinateur ?
+
+dans le support de cours 
+
+=> 5 minutes (le temps que tout le monde télécharge et install Visual Studio Code)
+
+=> pour ceux qui ont Visual Studio Code déjà installé 
+jetez un coup d'oeil sur la section suivante : Mots clés de Javascript
+
+=> Visual Studio Code c'est le seul logiciel que nous allons installer 
+dans le cadre de ce cours 
+
+=> pourquoi ne pas utiliser Word pour prendre les notes ?
+
+=> c'est un choix personnel // Word est payant 
+
+=> fichier textuel suffisant pour prendre des notes 
+
+---------------------------------------------
+
+je lance visual studio, l'outil, à partir de maintenant qui va me permettre 
+d'écrire !!
+
+
+
+
+
+
+

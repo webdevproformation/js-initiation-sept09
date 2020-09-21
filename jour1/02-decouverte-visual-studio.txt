@@ -1,0 +1,44 @@
+Visual Studio va être notre outil pour coder en javascript
+(tout au long de la semaine)
+
+Outil => 
+    - gratuit
+    - Développé par Microsoft
+    - il dispose d'une grande quantité d'extensions qui 
+    vont permettre de nous faciliter la vie en tant que développeur
+
+Nous avons installé deux extensions :
+    - french language pack => traduire le logiciel en français
+    - zoom bar => ajouter des nouveaux boutons facilement zoomer et dézoomer
+
+autre point ESSENTIEL => créer des fichiers et des dossiers directement
+via Visual Studio Code 
+
+=> 1 il faut afficher la zone de gauche "Explorer" 
+=> 2 sélectionner le dossier qui va contenir mon fichier 
+=> 3 cliquer que l'icone "Nouveau fichier"
+=> 4 nom du fichier 02 03 ... facultatif (très pratique pour se retrouver dans les différents fichiers entre 10 et 20 fichiers )
+=> 5 fini de nommer mon fichier Enter => 
+=> 6 ouvrir le fichier dans un nouvel onglet ! 
+
+----- 
+
+si j'ai fais une coquille dans le nom du fichier 
+Click droit puis "Renommer"
+et que la coquille est enlevée => Enter
+
+------
+
+lorsque vous modifiez un fichier, vous avez un indicateur visuel
+au niveau du nom l'onglet => un cercle 
+
+Vous avez du texte dans votre fichier qui n'est pas encore 
+enregistré sur le disque dur 
+
+Ctrl + S => Enregistrer 
+
+------
+
+Cas pratique
+
+dans le dossier jour1 => créer le fichier 03-emmet.html
