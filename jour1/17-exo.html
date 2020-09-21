@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let titre = "M";
+        let prenom = "John" ;
+        let nom = "Doe" ;
+
+        // "Je m'appelle Monsieur John Doe"
+
+        // méthode version 5 js : avec des +
+
+        let phrase = "Je m'appelle " + titre + "onsieur " + prenom + " " + nom ;
+        console.log(phrase) ;
+
+        // méthode version 6 js : ${} et `` 
+
+        let phrase2 = `Je m'appelle ${titre}onsieur ${prenom} ${nom}`;
+        console.log(phrase2);
+
+        // autre manière 
+        console.log("Je m'appelle %sonsieur %s %s", titre, prenom, nom)
+
+    </script>
+</body>
+</html>
