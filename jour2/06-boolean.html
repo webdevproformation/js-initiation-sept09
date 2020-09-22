@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 06-boolean.html
+
+        // variable qui contiennent des number et de string 
+        // 5 types principaux en javascript 
+        // => boolean = true ou false 
+        // true et false sont des mots clés du langage javascript 
+        // true mot clé comme let ,   console.log() 
+
+        let toto = 10 > 3 ;
+        // quand on a le symbole =, créé une variable et l'initialiser
+        // d'abord javascript va déterminer la valeur  à droite de l'égalité
+        //         = true ;
+        // toto = true ;
+        // c'est le symbole > => force javascript à comparer => boolean 
+
+        console.log( toto ) ; // true
+
+        let toto2 = 10 < 3 ;
+        console.log(toto2); // false
+
+        // opérateur de comparaison 
+        //  > strictement supérieur
+        //  < strictement inférieur
+        //  >= supérieur ou égal  attention ce symbole n'existe pas => 
+        //  <= inférieur ou égal  attention ça n'existe pas =< 
+        //  != différent
+        //  == égal      deux symboles égals sans espace entre les deux égals 
+
+        // === strictement égal
+        // !== strictement différent 
+
+        let verif3 = 30 >= 30 ; // true
+
+        let verif4 = 12 <= 40 ; // true
+
+        let verif5 = 40 == 20 ; // false 
+        console.log(verif5);
+
+        let verif6 = 30 != 20 ; // true 
+        console.log(verif6);
+
+        // ===
+
+        let verif7 = 30 == "30" ; // true
+        //         = "30" == "30" // transtypage javascript comparaison 
+        //                          js va essayer de mettre les éléments comparés dans le même
+        //                          type 
+        console.log(verif7);
+
+        let verif8 = 30 === "30" ; // false 
+        // égalité stricte valeur et le type 
+        console.log(verif8);
+
+        // bonus
+        let verif9 = true >= 10 ; 
+        //            1   >= 10 // false 
+
+        // 
+        let verif10 = "20px" == 20 ; // false
+        //             "20px" == "20" // false
+
+        let verif11 = "20px" === 20 ; // false
+
+        // concept AVANCE : false ==   undefined "" null 0 transtypage
+        // true "a" "abc" 23 
+    </script>
+</body>
+</html>
+<!-- 
+    créer un nouveau fichier 07-exo.html contient une balise script
+
+    pour les comparaisons suivantes pouvez vous me dire si c'est true ou false ???
+    2 >= 2
+    "a" == "ab"
+    "hello" > "bonjour" 
+    2 ==  "2"
+    2 === "2"
+-->

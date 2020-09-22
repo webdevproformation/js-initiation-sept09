@@ -17,12 +17,25 @@
 
         let diaporama = "<div>" ;
             diaporama += "<img src=\"http://image.jpg\" alt=\"\">" ;
+        //équivalent 
+            // diaporama += '<img src="http://image.jpg" alt="">' ;
+            // remplacer le " " de début et fin par ' '=> plus besoin d'échapper 
+            // le " " dans la chaine
+        // équivalent
+            // diaporama += `<img src="http://image.jpg" alt="">` ;
+            // => plus besoin d'échapper le " " dans la chaine
             diaporama += "<p>légende de l'image</p>" ;
             diaporama += "</div>" ;
         
         console.log(diaporama) ;
         // intérêt de stocker toute la chaine de caractère dans une seule variable
 
+        // DOM => injecter dans la page web
+        // générer via javascript notre page en dynamique 
     </script>
 </body>
 </html>
+
+<!-- 
+    06-boolean.html
+-->
