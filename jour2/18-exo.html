@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            je veux écrire le texte suivant dans la console :
+
+            5 x 10 = 50
+            5 x 9 = 45
+            5 x 8 = 40
+            5 x 7 = 35
+            ...
+            5 x 1 = 5
+        */
+
+        for( let i = 10 ; i >= 1 ; i-- ){
+            console.log( `5 x ${ i } = ${ 5 * i }` ) ;
+        }
+
+        console.log("solution 2") ;
+
+        for( let i = 10 ; i > 0 ; i-- ){
+            console.log( `5 x ${ i } = ${ 5 * i }` ) ;
+        }
+
+        console.log("solution 3") ;
+
+        for( let i = 50 ; i > 4 ; i = i - 5 ){
+            console.log ( `5 x ${ i / 5 } = ${ i }` ) ;
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+    19-while.html
+-->
