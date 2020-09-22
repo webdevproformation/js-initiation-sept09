@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let nbArticle = 2 ;
+        let titre = "article numéro ";
+        let url = "http://mon-site.fr/article/" ;
+
+        // résolution avec la boucle for
+
+        // je dois créer la variable qui va stocker tout mon texte 
+        // juste avant la boucle
+        let articles = "";
+        for(let i = 1 ; i <= nbArticle ; i++ ){
+            articles += "<article>";
+            articles += "<h2>" + titre + i +"</h2>";
+            articles += "<p>lorem ipsum </p>" ;
+            articles += "<p><a href=\"" + url + i +"\">lire la suite</a></p>" ;
+            articles += "</article>" ;  
+        }
+        
+        console.log(articles);
+
+        // résolution avec la boucle while
+        let articles2 = "";
+        let i = 1 ; 
+        while( i <= nbArticle  ){
+            articles2 += "<article>";
+            articles2 += "<h2>" + titre + i +"</h2>";
+            articles2 += "<p>lorem ipsum </p>" ;
+            articles2 += "<p><a href=\"" + url + i +"\">lire la suite</a></p>" ;
+            articles2 += "</article>" ;
+            i++ ;
+        }
+        console.log(articles2);
+    </script>
+</body>
+</html>
