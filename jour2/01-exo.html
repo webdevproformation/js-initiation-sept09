@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 12 ;
+        let b = 2 ;
+        let c = "informatique" ;
+
+        // 1ère manière de faire 
+        // javascript 5
+        // 14
+
+        let message = "nous allons suivre une formation en " + c +" de " + ( a * b )  +" heures " ;
+
+        // la multiplication va être réalisé avant l'addition (et donc la concaténation)
+        // vous pouvez ajouter des parenthèses pour garantir que la multiplication soit effectuer en priorité
+
+        console.log(message);
+
+        // 2ème méthode javascript 6 template string 
+
+        let phrase2 = `nous allons suivre une formation en ${ c } de ${ a * b } heures`;
+        // à l'intérieur de ${ } vous pouvez effectuer des calculs 
+        console.log(phrase2);
+
+    </script>
+</body>
+</html>
