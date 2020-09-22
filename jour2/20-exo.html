@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            Tour de boucle n° 1
+            Tour de boucle n° 3
+            Tour de boucle n° 5
+            Tour de boucle n° 7
+            Tour de boucle n° 9
+            Tour de boucle n° 11
+        */
+
+        let i = 1 ;
+
+        while( i < 12 ){
+            console.log("Tour de boucle n° " + i);
+            i += 2 ;
+        }
+
+        console.log("solution 2");
+
+        i = 1 ; // attention il faut réinitialiser la valeur de i à 1 
+        // sinon i = 12 => la condition dans la boucle while est false 
+
+        while( i <= 11 ){
+            // false 
+            console.log("Tour de boucle n° " + i);
+            i = i + 2 ;
+        }
+
+    </script>
+</body>
+</html>
