@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  a = 30 ;
+        let  b = 40 ;
+        let  c = 12 * 4 < 44 / 3 ; // 48 < 11 // false
+            // c contient false 
+        
+        if( a >= b ){
+        // 30 >= 40 // false 
+            console.log( "verif 1 ok" );
+        }
+
+        if ( c >= b ){
+        // false >= 40 
+        // comparaison d'un boolean avec un number => javascript va transtyper
+        // 0 >= 40 
+        // false 
+            console.log( "verif 2 ok" );
+        }
+
+        if( c >= b || a < b ){
+        //  false  || 30 < 40 
+        // false || true
+        // true
+            // donc l'instruction va être exécutée !!!
+            console.log( "verif 3 ok" );
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+    12-if-elseif-else.html
+-->
