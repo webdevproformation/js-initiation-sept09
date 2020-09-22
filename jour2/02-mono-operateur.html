@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 02-mono-operateur.html
+
+        let a = 10 ; 
+
+        // faire augmenter la valeur de a de + 5 
+
+        // 1ère manière / syntaxe  d'augmenter a de + 5
+        
+        a = 10 + 5 ;
+        // quand une variable est créée, si jamais je dois changer sa valeur 
+        // je ne dois pas mettre le mot clé let 
+        // erreur : SyntaxError: redeclaration of let a
+        console.log( a ); // 45
+
+        // 2ème manière / syntaxe d'augmenter a de + 5
+        
+        a = a + 5 ; 
+
+        // en informatique le symbole = n'a pas le même sens que le symbole =
+        // en mathématique
+
+        // en mathématique a = a + 5 => impossible
+        // pour quelle valeur de a cette égalité est vérifiée ??
+        //                  a - a  = a - a + 5 
+        //                      0  = 5 
+
+        // en informatique le signe = n'a pas le même sens 
+        // a = a + 5 
+        //   résoudre la partie droite de l'égalité
+        // a = 15 + 5
+        // a = 20
+        // le = maintenant que l'on connait la valeur de la partie droite
+        // tu va le stocker dans la varaible a 
+        console.log( a ) ;
+
+        // 3ème manière d'écrire / syntaxe d'augmenter a de + 5 => 25 
+
+        // a = a + 5
+        a += 5 ; // += attention ne pas mettre d'espace entre le + et =
+
+        // mono operateur 
+
+        // syntaxe compacte pour augmenter la valeur de a de + 5
+
+        console.log( a ); // 25
+        // syntaxe appréciée car la plus rapide à écrire 
+
+        // problème souvent on n'aime pas avoir trop de variable 
+        // si tu réduire le nombre de variables pour résoudre ton problème 
+        // c'est une manière de résoudre ! 
+
+        // -----------------------  
+
+        let b = 22 ; 
+
+        // si je veux augmenter la valeur de b de + 1 ;
+
+        b = 22 + 1 ; // 23
+        console.log(b);
+
+        b = b + 1 ; // 24
+        console.log(b);
+
+        b += 1 ; // 25
+        console.log(b);
+
+        b++ ; // 26 variable++  => augmenter la valeur de la variable de + 1
+
+        // augmenter de +2
+        // b+++ n'existe pas 
+        // b += 2
+
+        console.log(b);
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer le fichier 03-exo.html qui contient une balise script
+
+    dans cette balise il ya une variable 
+
+    variable compteur initialisé à la valeur 30
+
+    augmenter le compteur de 30
+    augmenter le compteur de 20
+    augmenter le compteur de +1
+
+    afficher dans la console la phrase suivante :
+    notre article a été liké "la valeur de compteur" fois
+-->
