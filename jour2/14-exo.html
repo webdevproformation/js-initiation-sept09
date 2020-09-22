@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let compteur = 30 ;
+        let titre = "article 2" ;
+        let contenu = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum " ;
+
+        // pour afficher le texte dans la console
+        // utilisé une variable intermédiaire qui va stocker
+        // la concaténation
+
+        let article = "<div>" ;
+            article += "<h1 class=\"title\">" + titre + "</h1>" ;
+            article += "<p>" + contenu + "</p>" ;
+        
+        if( compteur == 0){
+            article += "<p>aucun like </p>";
+        }
+        else {
+            article += " <p> cet article a " + compteur + " like</p>" ;
+        }
+
+        article += "</div>";
+        console.log(article);
+
+    </script>
+</body>
+</html>
