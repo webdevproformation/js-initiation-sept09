@@ -8,6 +8,78 @@
 <body>
     <script>
         // 08-operateur-boolean.html
+
+        // pour les number => les opérateurs suivants :
+        // + - * / ** % 
+
+        // pour les string => l'opérateur suivant :
+        // + concaténation 
+
+        // pour les booleans => les opérateurs suivants :
+        // || double pipe => OU
+        // && double esperluette => ET
+        // ! => NOT
+
+        // les booleans disposent de ces trois opérateurs 
+
+        let verif1 = 10 > 3 && 20 > 15 ;
+        //         = true   &&  true // si deux côtés du symbole && true => 
+                                     // && ET 
+        //         = true 
+        console.log ( verif1 ) ; // espace dans les parenthèses sont facultatifs 
+                                 // aucun impacte sur le résultat = aérer le code 
+
+        let verif2 = 10 > 12 && 20 > 15 ;
+        //         = false   &&   true ; 
+        //         =  false 
+
+        console.log ( verif2 ) ; // false 
+
+        let verif3 = "a" != "b" && 20 < 12 ;
+        //         =   true   &&  false
+        //         = false  // && il faut OBLIGATOIREMENT que true partout : des deux côtés
+        
+        console.log ( verif3 ) ;
+
+
+        // || => OU
+        // AltGr + 6 en haut sur Windows
+        let verif4 = 20 > 3 || 20 > 25 ;
+        //         =  true  ||    false // si jamais il ya un true à gauche ou à droite
+                                        // ou les deux alors || retourner true 
+        //         = true
+        
+        console.log(  verif4 ); // true
+
+        // ! NOT ( )
+
+        let verif5 = !( 20 > 30 ) ;
+        //         = !(    false     ) // NOT va donner l'inverse true => false
+        //         = true              // false => true
+
+        // attention aux priorités
+        // nombre addition et une multiplication => multiplication qui est prioritaire
+        // sauf si vous utilisez des parenthèses qui vont forcer l'ordre dans lequel
+        // les calculs sont être effectués
+
+        // && || => le ET qui est prioritaire 
+        let verif6 = 10 > 5 && 20 < 30 || "a" === "a" ;
+
+        //         =  true  &&   true  ||  true
+        //         =     true          || true
+        //                      true 
+
     </script>
 </body>
 </html>
+<!-- 
+    créer le fichier 09-exo.html 
+
+    pour les comparaisons suivantes, lesquelles sont false et lesquelles sont true ?
+
+    2 != 3 && 10 < 33
+    (2 != 5 && 3 > 4 ) || 2 <= 14 
+    2 != 5 && ( 3 > 4  || 2 <= 14 )
+    2 != 5 && 3 > 4  || 2 <= 14
+
+-->
