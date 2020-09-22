@@ -7,7 +7,10 @@
 </head>
 <body>
     <script>
-        let ville = "Marseille";
+        // si on change la valeur stockée dans la variable
+        // le code qui suit ne s'exécute plus de la même
+        // manière 
+        let ville = "Boulogne";
 
         if( ville == "Paris" ){
             console.log("vous habitez à Paris");
@@ -26,3 +29,30 @@
     </script>
 </body>
 </html>
+
+<!-- 
+    je ne présente pas switch case => je l'utilise jamais 
+    ressemble beaucoup à if else if else 
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+
+    formulaire et pour géré l'affichage
+
+    créer le fichier 14-exo.html qui contient une balise script
+
+    premier variable compteur = 30
+    deuxième variable titre = "titre de l'article"
+    troisième variable contenu = "lorem ipsum ...."
+
+    afficher dans le console le texte suivant en utilisant les variables précédentes :
+    <div>
+        <h1 class="title">titre de l'article</h1>
+        <p>lorem ipsum .... </p>
+
+        si la variable compteur = 0 alors  
+            <p> aucun like</p>
+        sinon 
+            <p> cet article a 30 like</p>
+    </div>
+
+    concaténation + chaine de caractères + if 
+-->
