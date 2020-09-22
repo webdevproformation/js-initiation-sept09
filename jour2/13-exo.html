@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ville = "Marseille";
+
+        if( ville == "Paris" ){
+            console.log("vous habitez à Paris");
+        } 
+        else if( ville == "Boulogne" || ville == "Clamart" || ville == "Montrouge"){
+            console.log("vous habitez dans le 92") ;
+        }
+        else if( ville == "Saint-Denis" || ville == "Aubervilliers" || ville == "Pantin"){
+            console.log("vous habitez dans le 93") ;
+        } 
+        else {
+            // toutes les conditions précédentes sont fausses => le ou les instructions dans le else qui vont être exécutée !!
+            console.log("vous habitez hors d'Ile de France");
+        }
+
+    </script>
+</body>
+</html>
