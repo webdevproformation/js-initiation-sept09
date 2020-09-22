@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 12-if-elseif-else.html
+
+        // on vient de voir if () { }
+
+        // on peut associer au mot clé if les mots clé suivants
+
+        let age = 85 ; // transformé notre chiffre en une chaine de caractère
+
+        if( age < 18 && age >= 0){
+            // 40 < 18 && 40 >= 0
+            // false && true
+            // false
+            console.log("vous êtes un enfant");
+        } else if( age >= 18 && age <= 70 ) { // vous pouvez mettre autant de else if que nécessaire 
+            // 40 >=18 && 40 <= 70
+            // true   &&  true 
+            // true 
+            // exécution de l'instruction et STOP => on ne va pas tester les autres conditions 
+            // javascript sort du if else if ...
+            console.log("vous êtes un adulte") ;
+        } else if( age >= 70 && age <= 120 ) {
+            console.log("vous êtes un retraité") ;
+        } else { // 1 seul ou aucun 
+            // si toutes les conditions / vérifications précédentes sont fausses alors c'est l'instruction
+            // dans le else qui va être exécutée par défaut
+            console.log("age non conforme");
+        }
+
+    </script>
+</body>
+</html>
+<!-- 
+    créer le fichier 13-exo.html avec une balise script
+
+    // initialiser la variable ville = "Marseille"
+
+    // si ville a pour valeur Paris 
+    // alors afficher dans la console "vous habitez à Paris"
+
+    // si ville a pour valeur Boulogne ou Clamart ou Montrouge 
+    // alors afficher dans la console "vous habitez dans le 92"
+
+    // si ville a pour valeur Saint-Denis ou Aubervilliers ou Pantin
+    //  alors afficher dans la console "vous habitez dans le 93"
+
+    // sinon
+    // afficher dans la console "vous habitez hors d'Ile de France"
+
+-->
