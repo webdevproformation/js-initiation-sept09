@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function additionSpecial (a , b){
+            if( a === b ){
+                // return ( a + b ) * 3 ;
+                return "égalité" ;
+            }
+            else {
+                return a + b  ;
+            }
+        }
+
+        let r = additionSpecial( 2, 4 ) // 6
+        console.log(r);
+
+        let r2 = additionSpecial( 4, 4 ); // 4 * 3 = 12
+        console.log(r2);
+
+
+        // ------------------------------------
+
+
+        function additionSpecial2 (a , b){
+            if( a === b ){
+                // return ( a + b ) * 3 ;
+                return "égalité" ;
+            }
+            else {
+                return a + b ;
+            }
+        }
+
+        let r1 = additionSpecial2( 2, 4 ) // 6
+        console.log(r1); // 6
+
+        r1 = additionSpecial2( 4, 4 ); // 4 * 3 = 12
+        console.log(r1); // "égalité"
+
+        r1 = 10 > 3 ;
+
+        console.log(r1); // true 
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    initiation => 
+    créer une fonction
+    appeler une fonction
+    mettre paramètres à une fonction 
+    utiliser une fonction avec paramètre
+    return et portée de variable
+    return pas besoin de mettre de parenthèses ( possible facultatif )
+    ..... 
+    il y a beaucoup plus de concepts pour les fonctions
+-->
