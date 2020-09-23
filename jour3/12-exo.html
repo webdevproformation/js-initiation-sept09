@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // lorsque l'on crée des tableaux 
+        // vous pouvez écrire en une ligne 
+        let listeDeCourse = [ "pomme", "pêche" , "poire" ,"banane" , "abricot" ,];
+
+        // sauter des lignes avec après chaque virgule
+        // le dernier élément du tableau il est déconseillé de mettre une virgule
+        // vous pouvez mettre une virgule après le dernier élément , mais c'est déconseillé
+        let listeDeCourse2 = [ 
+                        "pomme", 
+                        "pêche" , 
+                        "poire" ,
+                        "banane" ,
+                        "abricot" 
+                    ];
+
+        // dans un tableau, pas de problème pour stocker des valeurs de types différents
+
+        let formation = [ 
+            "initiation javascript" , // string
+            5 , // number
+            "jours",
+            false , // boolean
+            [ ] // tableau
+        ] ;
+
+        // afficher mon tableau dans la console 
+
+        console.log( formation ); 
+        // attention, le résultat dans la console n'est pas exactement le même
+        // si vous êtes sur Chrome / Firefox / Opéra / Internet Explorer 
+
+        // je souhaite utiliser une des valeurs qui sont stockées dans le tableau
+        // formation 
+
+        formation [ 0 ] ; // si j'ai des crochets => formation est un tableau
+        // formation( ) // formation fonction
+        // formation // string / number / boolean
+
+        formation [ 0 ] ; // récupére dans la variable de type tableau formation
+        // la valeur qui est stockée à la position 0 
+
+        // utiliser des tableaux qui contiennent plusieurs valeurs pour faire de la concaténation 
+
+        let voiture = [
+            206, // 0
+            "Peugeot", // 1
+            "John Doe",
+            10000,
+            "km"
+         ] ;
+
+         // grâce à cette variable de type tableau 
+         // écrire (via de la concaténation) la phrase suivante
+
+         // ma voiture est une Peugeot 206 
+
+         let phrase = "ma voiture est une " + voiture[ 1 ] + " " + voiture[ 0 ] ;
+         console.log( phrase );
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer le fichier 13-exo.html avec une balise script
+
+    la balise script contient une variable de type tableau :
+        - le nom de la variable est programme
+        - cette variable contient les 6 valeurs suivantes :
+            - HTML
+            - 2
+            - CSS
+            - 5
+            - semaines
+            - jours
+    
+    afficher dans la console les phrases suivantes :(en utilisant la concaténation 
+    et la variable programme )
+
+    1ère phrase :
+    je suis une formation en HTML d'une durée de 5 jours
+
+    2ème phrase :
+    il m'a fallu 2 semaines pour comprendre en détail CSS
+-->
