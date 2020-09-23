@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 08-return.html
+
+        // une fonction stocke des instructions 
+        // le problème c'est que on ne peut accéder aux instructions depuis l'extérieur 
+
+        function page(){
+            let titre = "premier article";
+        }
+
+        console.log(titre); 
+
+        // erreur Uncaught ReferenceError: titre is not defined
+        // toutes les instructions stockées dans une fonction ne sont 
+        // visible et utilisable que DANS la fonction 
+
+        // pour pouvoir utiliser une variable créé dans une fonction 
+        // mot clé return 
+
+        function genereTitre(){
+            let titre = "premier article" ;
+            return titre ; // il va être possible de récupérer la valeur 
+            // de la variable titre stockée dans la fonction !!
+        }
+
+    </script>
+</body>
+</html>
