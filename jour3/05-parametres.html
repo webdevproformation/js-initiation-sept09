@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 05-parametres.html
+
+        // jusqu'à maintenant nous avons créé des fonctions
+
+        function addition (){ // rien écrit dans les parenthèses
+            let a = 30;
+            let b = 20 ;
+            console.log(a + b);
+        }
+
+        // à partir de maintenant à ajouter des variables dans les parenthèses de la fonction
+
+        function multiplication ( a , b ){ 
+            // ajouter des les parenthèses de la fonction multiplication deux variables 
+            // => les variables a et b sont des PARAMETRES de la fonctions 
+            // => les variables a et b sont des ARGUMENTS de la fonctions
+            // dans les accolades => 1 seule instruction
+            console.log( a * b );
+
+            // mais les deux arguments n'ont pas de valeurs
+        }
+
+        // pour donner la valeur aux arguments 
+        // on va le faire au MOMENT de l'appel de la fonction
+
+        multiplication( 2 , 5 );  // a = 2 et b = 5
+
+        multiplication( 12 , 2 ); // a = 12 et b = 2 => 24
+
+        multiplication( 7 , 3 ); // 21
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer le fichier 06-exo.html avec la balise script
+
+    1/ déclarer une fonction nom aireCercle 
+
+    2/ cette fonction dispose d'un argument rayon
+
+    3/ cette fonction dispose de deux instructions :
+        - déclarer la variable resultat = 3,14 * rayon * rayon
+        - afficher dans la console la phrase suivante :
+            l'aire d'un cercle de rayon rayon a une aire de resultat
+
+     4/ exécuter / appeler la fonction aireCercle pour le rayon
+        44,5
+        70,43
+-->
