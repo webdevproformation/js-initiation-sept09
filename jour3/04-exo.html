@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // créer une fonction => genererPage
+
+        function genererPage(){
+            // dans les accolades écrire les instructions qui vont être stocké dans le nom de la fonction 
+            // créer des variables
+            // if 
+            // else
+            // for // while 
+            // boolean 
+            for(let i = 0 ; i < 30 ; i += 3){ // boucle
+                console.log("Action numéro" + i) ; // concaténation
+            }
+        }
+
+        // appeler la fonction pour exécuter les instructions dans les accolades de la fonction
+
+        genererPage();
+        // je n'appelle pas ma fonction , il ne se passera rien à l'écran
+
+        genererPage(); 
+        // je peux réexécuter les instructions via le nom de la fonction => plus rapide !!! 
+
+        function genererPage2(){
+            let i = 0 ;
+            while(i < 30){ // boucle
+                console.log("Action numéro" + i) ; // concaténation
+                i += 3 ;
+            }
+        }
+
+        genererPage2();
+        genererPage2();
+
+    </script>
+</body>
+</html>
