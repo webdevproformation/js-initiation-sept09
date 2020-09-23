@@ -25,12 +25,71 @@
         // pour pouvoir utiliser une variable créé dans une fonction 
         // mot clé return 
 
-        function genereTitre(){
+        function genereTitre(){ // camelCase => camelCase => technique pour donner un nom aux fonctions et aux variables
             let titre = "premier article" ;
             return titre ; // il va être possible de récupérer la valeur 
             // de la variable titre stockée dans la fonction !!
         }
 
+        // Rdv 13h35 !!
+        // bon appétit !!
+
+        // avaler => refaire // seul // écrire // dessiner // faire des schémas // plus tu vas passer du temps => plus ça va être naturel 
+
+        // la portée des variables 
+        // scope 
+
+        // et en même temps le mot clé return 
+        // => utilisé dans les fonctions 
+        // le mot return vous le trouverez quand on crée des fonctions 
+
+        // en général jamais ailleurs 
+
+        // toutes les instructions stockées dans les accolades d'une fonction
+        // sont cachées DANS la fonction
+        // ne peut pas utiliser les variables que l'on a défini dans une fonction
+
+        // la seule manière d'utiliser ( lire ) une variable dans une fonction
+        // via le mot clé return
+        // modifier une variable qui est utilisée : arguments 
+
+        function hello (args){
+            console.log(args) ;
+            let a = 222 ;
+            return a ;
+        }
+
+        // extérieur de la fonction 
+
+        let valeurA = hello("bonjour les amis ");
+
+        console.log( valeurA ) ;
     </script>
 </body>
 </html>
+<!-- 
+    créer le fichier 09-exo.html toujours une balise script
+
+    cette balise contient une fonction 
+
+      1 nom => genererArticle
+        2 arguments => titre et contenu
+        contient des instructions 
+
+            créer une variable html 
+            dans cette variable vous allez réaliser la concaténation suivante
+                <div>
+                    <h2>titre</h2>
+                    <p>contenu</p>
+                </div>
+            returner la valeur de html
+
+       2 appeler la fonction genererArticle avec les valeurs suivantes
+                titre : "premier article"
+                contenu : "lorem ipsum ..........."
+        et stocker le resultat de la fonction dans une variable qui s'appelle
+        article 
+
+       3 afficher le contenu de la variable article dans la console
+    
+-->
