@@ -108,3 +108,57 @@ false ||  true =  true
 false  ||  false =  false
 
 ----------------------------------------------
+
+
+<!-- 
+    créer le fichier 20-exo.html avec la fameuse balise script
+
+    utiliser la boucle while pour écrire le texte suivant dans la console du navigateur :
+
+    Tour de boucle n° 1
+    Tour de boucle n° 3
+    Tour de boucle n° 5
+    Tour de boucle n° 7
+    Tour de boucle n° 9
+    Tour de boucle n° 11
+
+    => je veux écrire ce texte dans ma console 
+    => 1er constate => ça se ressemble BEAUCOUP 
+
+    => 1ère manière de faire (sans utiliser de boucle )
+    => répéter la même instruction autant de fois que nécessaire 
+    => cette méthode marche mais elle est un peu LONGUE 
+    => demain j'ai besoin d'augmenter au de diminuer le nombre de ligne 
+
+    => trouver une solution en informatique qui va répéter cette ligne et juste changer le chiffre
+    => boucle for / while => permet de répéter une ligne !!! 
+-->
+
+console.log("Tour de boucle n° 1") ;
+console.log("Tour de boucle n° 3");
+console.log("Tour de boucle n° 5");
+console.log("Tour de boucle n° 7");
+console.log("Tour de boucle n° 9");
+console.log("Tour de boucle n° 11");
+console.log("Tour de boucle n° 13");
+console.log("Tour de boucle n° 15");
+
+// courte à écrire !!! 
+// minimum
+// maximum
+// combien tu augmentes entre chaque tour de boucle ! 
+// pour ce genre de boucle tu augmentes de manière constante
+
+for(let i = 1 ; i <= 15 ; i += 2){
+    console.log("Tour de boucle n° " + i) ; // si tu la mets dans les accolades
+    // du mot clé for
+}
+
+let j = 1 ;
+while(i <= 15){
+    console.log("Tour de boucle n° " + i) ;
+    i += 2 ;
+}
+
+
+=> boucle plus compliquées +2 -3 +5 -5 +7 => tableau !!! 
