@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function aireCercle( rayon ){
+            // calculer l'aire
+            let pi = 3.14 ;
+            let resultat = pi * rayon * rayon ;
+            // let resultat = Math.PI * rayon ** 2 ; // équivalent à la ligne précédente 
+            // * multiplier
+            // ** puissance 
+
+            // concaténation et afficher dans la console
+            console.log("l'aire d'un cercle de rayon " + rayon + " a une aire de " + resultat);
+        }
+
+        // utiliser la fonction 
+
+        aireCercle( 44.5 ) ; // attention pour les chiffres à virgule utiliser le . pour les décimales
+        aireCercle ( 70.43 ) ;  // attention pour les chiffres à virgule utiliser le . pour les décimales
+    </script>
+</body>
+</html>
