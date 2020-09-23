@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 15-traitement-tableau.html
+
+        // 1er : modifier une valeur qui est dans le tableau
+
+        let voitures = [
+            "Peugeot", // 0
+            "Renault", // 1
+            "VW"
+        ];
+
+        // je veux changer la valeur de Renault par Renault Nissan
+
+        voitures [ 1 ] = "Renault Nissan" ;
+
+        console.log( voitures );
+
+        // 2ème : ajouter un nouvel élément à la fin de mon tableau
+        
+        // méthode utiliser des méthodes 
+        // dans le support de cours // annexe 
+
+        voitures.push("Toyota"); 
+
+        console.log(voitures);
+
+        // 3ème : ajouter un élément au début tableau
+
+        voitures.unshift("BMW");
+        console.log(voitures);
+
+        // 4ème traitement : supprimer l'élément qui a l'indice 2
+        voitures.splice( 1 , 1 );
+        // position = indice
+        // nombre d'élément à supprimer
+        console.log(voitures);
+
+
+    </script>
+</body>
+</html>
