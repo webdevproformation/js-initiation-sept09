@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nbPost = 10 ;
+        let auteur = "john@doe.fr" ;
+
+        // 1ère solution possible ! 10 console log : un par ligne 
+        for(let i = 1 ; i <= nbPost ; i++ ){
+            let post = "<div>" ;
+                post += "<h2>article " + i +"</h2>" ;
+                post +=  "<img src=\"http://image.jpg\" alt=\"\">" ;
+                post +=  "<p>" + auteur + "</p>"  ;
+                post += "</div>" ;
+            console.log(post);
+        }
+
+        //2ème solution // 1 seul console.log()qui contient toute la variable
+        let posts = "";
+        for(let i = 1 ; i <= nbPost ; i++ ){
+                posts += "<div>" ;
+                posts += "<h2>article " + i +"</h2>" ;
+                posts +=  "<img src=\"http://image.jpg\" alt=\"\">" ;
+                posts +=  "<p>" + auteur + "</p>"  ;
+                posts += "</div>" ;
+        }
+        console.log(posts);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // divisible par 1 ou par lui même 
+        let nombre = 42 ;
+        let i = 2 ;
+        while( i <= nombre ){
+            if(nombre % i == 0 && i != nombre){
+                console.log( nombre + " n'est pas un nombre premier car divisible par " + i );
+                break ;
+            }
+
+            if( i == nombre ){
+                console.log( nombre + " est un nombre premier" );
+            }
+            i++ ;
+        }
+    </script>
+</body>
+</html>
