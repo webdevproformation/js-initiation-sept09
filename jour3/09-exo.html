@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function genererArticle( titre , contenu ){
+            let html = "<div>";
+                html += "<h2>" + titre + "</h2>" ;
+                html += "<p>" + contenu + "</p>" ;
+                html += "</div>" ;
+            return html ; // je vais pouvoir utiliser le contenu de html
+            // à l'extérieur de ma fonction
+        }
+
+        // appel de la fonction et je stocke le résultat de la fonction
+        // dans la variable article
+
+        let article1 = genererArticle(  "premier article" , "lorem ipsum ..........."  );
+        let article2 = genererArticle(  "deuxième article" , "lorem ipsum ..........."  );
+        let article3 = genererArticle(  "troisième article" , "lorem ipsum ..........."  );
+
+        console.log(article1 , article2 , article3) ;
+
+    </script>
+</body>
+</html>
