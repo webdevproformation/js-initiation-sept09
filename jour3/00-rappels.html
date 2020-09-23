@@ -155,10 +155,102 @@ for(let i = 1 ; i <= 15 ; i += 2){
 }
 
 let j = 1 ;
-while(i <= 15){
-    console.log("Tour de boucle n° " + i) ;
-    i += 2 ;
+while(j <= 15){
+    console.log("Tour de boucle n° " + j) ;
+    j += 2 ;
 }
 
+=> ENNEMI numéro 1 => pour les développeurs COPIER COLLER ( les noms des variables / logique ) => le mieux c'est de tout écrire 
 
 => boucle plus compliquées +2 -3 +5 -5 +7 => tableau !!! 
+
+<!-- 
+  créer le fichier 21-exo.html balise script 
+
+  combo avec concaténation +  boucle 
+ => utiliser les concepts en même temps 
+
+  let nbArticle = 30
+  autre variable titre = "article numéro "
+  autre variable url = "http://mon-site.fr/article/"
+
+via une boucle de votre choix (while / for)
+afficher dans la console le texte suivant
+<article>
+    <h2>article numéro 1</h2>
+    <p>lorem ipsum </p>
+    <p><a href="http://mon-site.fr/article/1">lire la suite</a></p>
+</article>
+<article>
+    <h2>article numéro 2</h2>
+    <p>lorem ipsum </p>
+    <p><a href="http://mon-site.fr/article/2">lire la suite</a></p>
+</article>
+... 
+répété 30 fois 
+=> avec ces 2 techniques bien maîtrisées concaténation et les boucles
+=> réaliser des pages web !!! 
+-->
+
+<article>
+    <h2>article numéro 2</h2>
+    <p>lorem ipsum </p>
+    <p><a href="http://mon-site.fr/article/2">lire la suite</a></p>
+</article>
+
+
+30 fois 
+
+// solution Virginie => afficher article par article dans la console
+for(let i = 1 ; i <=30 ; i++ ){
+    let article = "<article>" ;
+       article += "<h2>article numéro " + i + "</h2>" ; // += 
+       article += " <p>lorem ipsum </p> " ;
+       article += " <p><a href=\"http://mon-site.fr/article/" + i + "\">lire la suite</a></p>" ; // += échapper le symbole "
+       article += "</article> ";
+    console.log(article) ;
+}
+// je ne peux pas écrire hélas mon code comme ça 
+
+// solution Malik
+let articles = ""; // 1 seule variable qui contient tous les articles 
+for(let i = 1 ; i <=30 ; i++ ){
+       articles = "<article>" ;
+       articles += "<h2>article numéro " + i + "</h2>" ; // += 
+       articles += " <p>lorem ipsum </p> " ;
+       articles += " <p><a href=\"http://mon-site.fr/article/" + i + "\">lire la suite</a></p>" ; // += échapper le symbole "
+       articles += "</article> ";
+}
+console.log(articles) ;
+
++ - / * => %  
+
+
+// let nombre = 91 ;
+
+----------------------------------------------
+
+pouvez vous créer le nouveau fichier 01-exo.html qui contient la balise script 
+
+vous avez deux variables 
+nombrePost = 10
+auteur = john@doe.fr 
+
+ecrire dans la console le texte suivante 10 fois 
+
+<div>
+    <h2>article 1</h2>
+    <img src="http://image.jpg" alt="" >
+    <p>john@doe.fr</p>
+</div>
+<div>
+    <h2>article 2</h2>
+    <img src="http://image.jpg" alt="" >
+    <p>john@doe.fr</p>
+</div>
+... 
+<div>
+    <h2>article 10</h2>
+    <img src="http://image.jpg" alt="" >
+    <p>john@doe.fr</p>
+</div>
