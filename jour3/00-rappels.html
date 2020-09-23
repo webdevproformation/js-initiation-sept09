@@ -1,0 +1,110 @@
+Les supports et prises de notes :
+
+https://formation.webdevpro.net/js-initiation
+
+login : java
+mdp : script
+
+prise de notes sur github : 
+https://github.com/webdevproformation/js-initiation-sept09
+
+
+pour les utilisateurs de MacOS : raccourcis clavier pour
+les symboles de codage :
+
+https://webdevpro.net/raccourcis-clavier-pour-coder-sur-macos/
+
+
+fin de journée vers 16h45 - 16h50 => QCM sur tous les points vus
+
+3 jours javascript initiation 
+
+à partir autre support => DOM == arrêter d'écrire dans la console
+== écrire dans la page web !!!! 
+
+---------------------------
+
+Avez vous des questions ???
+
+- Hakim => Boolean
+
+- Lancinet => deux derniers exos 
+
+- Abdel Nour / Chaher => dernier exo des questions
+
+---------------------------
+
+les booleans 
+
+Dans la vie on est amené à manipuler (négocie, discute ) deux types de données régulièrement
+
+=> chiffres : combien / longueur / durée ... 
+=> lettre  : présenter / négocier / préciser 
+
+=> Boolean : situation j'ai ou j'ai pas 
+             fait ou pas fait 
+             rouge ou pas rouge 
+
+             décrire quelquechose qui a au maximum 2 états : ok // ko 
+
+             est ce que la personne a saisi correctement ses logins et mot de passe 
+             oui / non  // il n'y a pas de situation peut être
+             1 / 0 
+
+            => informatique l'ordinateur génére un boolean lorsque tu fais des COMPARAISONS
+
+             > < <= >= == !=  === !===  => boolean 
+
+            l'ordinateur va générer un boolean 
+
+            + * / - => chiffres 
+
+let isAdministrateur = true // gérer le site
+let isAdministrateur = false // lire des articles  
+
+let login = "qwerty"; // récupérer depuis une base de données 
+
+let isActif = login == "azerty";
+//          = "qwerty" == "azerty"
+            =  false 
+
+// plusieurs boolean enchainer 
+
+// si l'utilisateur saisit une login correct ET l'utilisateur a saisi un mot de passe correct 
+
+login + mot de passe correcte SIMULTANEMENT 
+
+let loginBd = "azerty";
+let mdpBd = "12345";
+
+// ce sont les valeurs que tu as saisi dans le formulaire 
+let isConnected = loginBd == "Azerty" && mdpBd == "12345" ;
+//              = "azerty" == "Azerty" && "12345" == "12345"
+//              = false   &&  true
+//              =   false 
+
+
+2 != 5 && 3 > 4  || 2 <= 14
+ true   &&  false  ||  true
+        false      ||  true
+                true 
+
+// 3 opérations 
+// && et || => && qui prioritaires
+// && => ET  => SIMULTANEMENT true de deux cotés => true // sinon false
+// || => OU  => au moins un côté il y ait true => true // sinon false 
+
+
+ET dans toutes les situations 
+true  && true = true
+false  &&  true =  false
+true &&  false =  false
+false  &&  false =  false
+
+OU dans toutes les situations
+true  || true = true
+true  ||  false =  true
+false ||  true =  true
+false  ||  false =  false
+
+----------------------------------------------
