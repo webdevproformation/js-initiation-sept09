@@ -43,7 +43,51 @@
         // nombre d'élément à supprimer
         console.log(voitures);
 
+        // introduction => DOM 
+        // utiliser très régulièrement des tableaux
+        // de vous présenter rapidement comment ça fonctionne !!
+        // plus de cas => DOM 
 
+        // 5 parcourir un tableau
+        // combo entre tableau et une boucle 
+        // plusieurs techniques simultanément 
+        // plusieurs manières de faire des boutons 
+
+        // je veux parcourir mon tableau voitures
+
+        console.log(voitures [ 0 ]);
+        console.log(voitures [ 1 ]);
+        console.log(voitures [ 2 ]);
+        console.log(voitures [ 3 ]);
+
+        // parcourir un tableau 
+        // combo => boucle qui contient un tableau 
+        for(let i = 0 ; i < 4 ; i++){
+            // exécuter ce qui est écrit dans les accolades 4 fois 
+            console.log(voitures [ i ]);
+        }
+
+        // 2ème manière de parcourir un tablea
+        for( let voiture of voitures ){
+            // let élément of tableau
+            console.log( voiture );
+        }
+        
     </script>
 </body>
 </html>
+<!-- 
+    créer le fichier 16-exo.html
+
+    2 ce fichier contient un tableau ayant les valeurs suivantes :
+    let listeMarque = ["Toyota", "BMW", "Skoda", "Nissan"] ;
+
+    3 afficher dans la console les chaines de caractères suivantes :
+
+            voiture n° 1 a la marque Toyota
+            voiture n° 2 a la marque BMW
+            voiture n° 3 a la marque Skoda
+            voiture n° 4 a la marque Nissan
+    
+    // triple combo boucle / tableau / concaténation
+-->
