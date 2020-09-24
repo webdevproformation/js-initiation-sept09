@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let parametres = [
+            "https://google.fr",
+            2 , 
+            20 > 12 ,
+            "" // chaine de caractère vide
+        ];
+
+        // afficher dans la console le type de chaque élément du tableau
+
+        // 1ère : en répétant la même instruction
+
+        console.log( typeof(parametres[ 0 ] ));
+        console.log( typeof(parametres[ 1 ] ));
+        console.log( typeof(parametres[ 2 ] ));
+        console.log( typeof(parametres[ 3 ] ));
+
+        // 2ème manière équivalente aux lignes précédentes : boucle
+
+        // for || for of 
+        console.log("2eme solution")
+        for(let i = 0 ; i <= 3 ; i++ ){
+            console.log( typeof( parametres[ i ] )) ;
+        }
+
+        console.log("3eme solution")
+        // of incrémente automatiquement jusqu'à la fin 
+        // introduite avec nouvelle version de javascript 6
+        for(let elementDuTableau of parametres){
+            console.log( typeof( elementDuTableau ));
+        }
+
+        // dernière partie de l'énoncé 
+
+        for(let i = 0 ; i <= 3 ; i++){
+            if(typeof( parametres[ i ] ) == "number" ){
+                console.log("je suis un nombre");
+            } else if( typeof( parametres[ i ] ) == "string"){
+                console.log("je suis une chaine");
+            } else {
+                console.log("je suis un type non traité") ;
+            }
+        }
+    </script>
+</body>
+</html>
