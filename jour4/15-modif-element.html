@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="element1"></p>
+    <p class="element2"></p>
+    <p></p>
+
+    <script>
+        // objectif c'est de modifier ces 3 balises via du javascript
+
+        // modifier le style css
+        // modifier le contenu => écrire dedans 
+
+        let premier = document.querySelector("#element1");
+        // premier est lui même un objet => .innerHTML (tout en majuscules HTML)
+        // .style
+        // écrire à l'intérieur bonjour
+        // le mettre en couleur rouge
+        premier.innerHTML = "Hello";
+        premier.style["color"] = "red";
+
+        // pour le deuxième élément 
+        let deuxieme = document.querySelector(".element2") ;
+        deuxieme.innerHTML = "un peu de texte";
+        deuxieme.style.color = "blue";
+        deuxieme.style["font-size"] = "30px";
+        deuxieme.style["font-weight"] = "bold";
+
+        let last = document.querySelectorAll("p")[2] ;
+        last.innerHTML = "dernier paragraphe";
+        last.style["margin-left"] = "120px";
+        last.style["text-shadow"] = "2px 2px 4px grey";
+
+
+    </script>
+</body>
+</html>
