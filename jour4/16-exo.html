@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p class="first"></p>
+    <p></p>
+    <ul>
+        <li class="first"></li>
+        <li class="second"></li>
+        <li class="last"></li>
+    </ul>
+    <script>
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Introduction";
+        h1.style["text-align"] = "center";
+
+        // vu que je n'ai qu'une seule modification à faire 
+        // écrire en 1 ligne
+        document.querySelector("p.first").innerHTML = "découverte du DOM" ;
+
+        let lastP = document.querySelectorAll("p")[1];
+        lastP.innerHTML = "informations suivantes" ;
+        // lastP.style["text-decoration"] = "underline";
+        // autre manière d'écrire la ligne précédente
+        lastP.style.textDecoration = "underline";
+
+        // 1ère manière de faire 
+        // sélectionner 1 par 1 de faire les modifications
+
+        let firstLi = document.querySelector("li.first"); 
+        firstLi.innerHTML = 1 ; 
+        firstLi.style["font-size"] = "10px"; 
+
+        let secondLi = document.querySelector("li.second"); 
+        secondLi.innerHTML = 2 ; 
+        secondLi.style["font-size"] = "20px"; 
+
+        let lastLi = document.querySelector("li.last"); 
+        lastLi.innerHTML = 3 ; 
+        lastLi.style["font-size"] = "30px"; 
+
+        // maintenir la touche Alt et cliquer 
+
+        // 2ème manière de faire => boucle 
+        let listeDesLi = document.querySelectorAll("li");
+        // je sélectionne tous les li dans la page [ ]
+        for(let i = 0 ; i < 3 ; i++){
+            listeDesLi[i].innerHTML = i + 1;
+            listeDesLi[ i ].style["font-size"] = i + 1 + "0px";
+        }
+
+
+    </script>
+</body>
+</html>
