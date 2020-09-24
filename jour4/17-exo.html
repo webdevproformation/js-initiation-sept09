@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+    <p></p>
+    <a href=""></a>
+    <hr>
+    <h2></h2>
+    <p></p>
+    <a href=""></a>
+    <script>
+        let article1 = {
+            titre : "Article 1",
+            contenu : "lorem ipsum",
+            lien : "lire la suite"
+        } ;
+
+        let article2 = {
+            titre : "Article 2",
+            contenu : "lorem ipsum 2",
+            lien : "lire la suite 2"
+        } ;
+        // 1ère méthode
+        document.querySelectorAll("h2")[0].textContent  = article1.titre;
+        document.querySelectorAll("p")[0].innerHTML  = article1.contenu;
+        document.querySelectorAll("a")[0].innerHTML = article1.lien ; 
+
+        document.querySelectorAll("h2")[1].innerHTML = article2.titre;
+        document.querySelectorAll("p")[1].innerHTML = article2.contenu ;
+        document.querySelectorAll("a")[1].innerHTML = article2.lien ;
+
+        // 2ème méthode 
+        // 
+    </script>
+</body>
+</html>
