@@ -8,6 +8,39 @@
 <body>
     <script>
         // 02-objet.html
+        // fin des concepts de bases pour comprendre
+        // le langage javascript => objet 
+        // DOM => utilise EXCLUSIVEMENT ce concept => pour modifier 
+        // la page web !!!!!!!!!
+
+
+        // en javacript => tableau = stocker dans cette variable plusieurs valeurs 
+        // la seule limite du tableau : pour chaque élément on ne sait exactement à quoi correspond chaque item : texte qui est à la position 0 , number en position 1
+
+        // objet javascript => permettre de stocker  dans cette variable plusieurs valeurs 
+        // de manière nommé 
+
+        let formation = { }; // objet vide 
+        // attention pour les objets, il faut utiliser des { } et non des [ ] tableau 
+
+        let maison = { // 5 propriétés 
+            surface : 50 , // propriété de l'objet maison = une variable dans un objet
+            unite : "m²",
+            adresse : "75 rue du Paradis 75000 Paris",
+            prix : 100000 ,
+            isAchete : true  // vous pouvez mettre une virgule pour le dernier élément => pas de bug mais c'est déconseillé
+        };
+
+        // objet : variable qui contient plusieurs valeurs 
+
+        // concaténation et en utilisant l'objet maison
+        // j'habite au 75 rue du Paradis 75000 Paris dans une maison de 50 m²
+
+        let phrase = "j'habite au " + maison.adresse + " dans une maison de " + maison.surface + " " + maison.unite ;
+
+        console.log( phrase );
+
+
     </script>
 </body>
 </html>
