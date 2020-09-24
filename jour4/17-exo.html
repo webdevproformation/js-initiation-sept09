@@ -35,7 +35,33 @@
         document.querySelectorAll("a")[1].innerHTML = article2.lien ;
 
         // 2ème méthode 
-        // 
+        // créer un tableau qui contient les deux objets article1 et article2
+        let articles = [ article1 , article2 ] ;
+
+        for(let i = 0 ; i < 2 ; i++ ){
+            document.querySelectorAll("h2")[i].innerHTML  = articles[i].titre;
+            document.querySelectorAll("p")[i].innerHTML  = articles[i].contenu;
+            document.querySelectorAll("a")[i].innerHTML = articles[i].lien ; 
+        } 
+
+        // troisième solution
+        let bloc1 = {
+            h2 : document.querySelectorAll("h2")[0] ,
+            p : document.querySelectorAll("p")[0] ,
+            a : document.querySelectorAll("a")[0]
+        }
+        let bloc2 = {
+            h2 : document.querySelectorAll("h2")[1] ,
+            p : document.querySelectorAll("p")[1] ,
+            a : document.querySelectorAll("a")[1]
+        }
+        let blocs = [ bloc1 , bloc2 ] ;
+        for(let i = 0 ; i < 2 ; i ++){
+            blocs[i].h2.innerHTML = articles[i].titre;
+            blocs[i].p.innerHTML = articles[i].contenu;
+            blocs[i].a.innerHTML = articles[i].lien;
+        }
+        // encore d'autres solutions possibles 
     </script>
 </body>
 </html>
