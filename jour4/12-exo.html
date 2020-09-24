@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>bonjour</p>
+    <h1>Lorem.</h1>
+    <ul>
+        <li>First</li>
+        <li class="last">Last</li>
+    </ul>
+    <script>
+
+        // 1ère manière
+        let h1 = document.querySelector("h1");
+        console.log(h1);
+
+        // 2ème manière en 1 instruction
+        console.log( document.querySelector("h1") );
+        
+        // la variable h1 est aussi un objet
+
+        // 1ère manière
+        let last = document.querySelector(".last");
+        console.log(last);
+        // 2ème manière en 1 instruction
+        console.log( document.querySelector(".last") );
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    13-selecteurs.html
+-->

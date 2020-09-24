@@ -8,7 +8,63 @@
 <body>
     <script>
         // 11-document.html
+
+        // window dispose d'une autre propriété => document
+        // pas besoin d'écrire window.document => document 
+
+        // dans cette propriété, nous allons pouvoir avoir accès à l'ensemble des informations qui sont visibles dans le navigateur
+
+        console.log(document) ;  // Objet
+
+        // énorme objet 
+        // Firefox => affichage directe 
+        // Chrome => utiliser le terminal de la console pour les propriétés et les méthodes de document 
+
+        // plus de 100 propriétés mais dans la réalité, nous allons surtout utiliser 5 et 10 propriétés de document 
+
+        console.log(document.all); // permet de voir toutes les balises dans la page    => afficher toutes les balises de la page dans un tableau 
         
+        // dans l'objet document => tout ce qui est écrit dans la balise html / head / body 
+
+        document.querySelector("title") // méthode permet de récupérer 1 balise en particulière 
+        // dans les parenthèses de la méthode nous allons écrire du texte
+        // texte ===  sélecteur css 
+        // 
+
+        document.querySelector("title") // récupérer la balise title 
+
+        document.querySelector(".introduction") // sélectionner la balise qui a la class introduction 
+
+        document.querySelector("#fin") // sélectionner la balise qui a l'id fin 
+
+        document.querySelector("ul li") // les li dans la balise ul 
+
+        document.querySelector("p") // sélectionner un paragraphe 
+
+        // c'est maintenant en 2020 => après de javascript 6 => celui qui est le plus utilisé // le plus flexible 
+
+        // il y a d'anciens méthode pour sélectionner des éléments 
+        // avec querySelector => tout faire 
+        // soit une méthode soit un autre 
+
+        document.querySelector(".bonjour p#hello span a") // exactement comme tu écris un sélecteur css 
+
     </script>
 </body>
 </html>
+
+<!-- 
+    créer une nouvelle page 12-exo.html contenant :
+        un paragraphe contenant le texte suivant : Bonjour
+        h1 avec le texte suivant lorem ipsum
+        liste non ordonnée avec 2 items <ul> 
+            contient le texte first <li>
+            contient le texte last et dispose d'une class last
+        
+        et une balise script 
+
+        dans cette balise vous réalise les actions suivantes 
+
+        selectionner la balise h1 et l'afficher dans la console
+        selectionner la balise qui a le class last et l'afficher dans la console
+-->
