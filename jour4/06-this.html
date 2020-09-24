@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 06-this.html
+
+        // this est un mot clé du langage javascript
+        // mot clé qui est compliqué car il peut avoir
+        // des valeurs différentes en fonction du contexte d'utilisation
+
+        // dans le cadre de cette initiation nous uniquement l'utiliser
+        // dans les objets 
+        // dans le fonctions // => POO en Javascript
+
+        // uniquement dans les objets UNIQUEMENT !! 
+        
+        // this dans un objet permet de réutiliser les propriétés de l'objet 
+
+        let fleur = { // 4 propriétés 
+            nom : "rose",
+            couleur : "rouge",
+            taille : 20 ,
+            unite : "cm" ,
+            description : function(){
+                // phrase suivante :
+                // je suis une rose rouge 
+                let phrase = "je suis une " + this.nom + " " + this.couleur ;
+                console.log( phrase );
+            } // méthode va utiliser des propriétés de l'objet de lui même
+        };
+        fleur.description();
+        // Warning => this vu la syntaxe que l'on a pris => objet lui même
+        // dans d'autres cas this prendre une autre valeur 
+        // oui et non 
+    </script>
+</body>
+</html>

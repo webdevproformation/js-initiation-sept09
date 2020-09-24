@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let auteur = {
+            nom : "Victor Hugo" ,
+            presentation : function(){
+                let annee = 1800 ;
+                console.log("l'auteur a écrit dans les années " + annee) ;
+            },
+            oeuvres : function(){
+                let tableau = [ "Notre Dame" , "Les Misérables" ];
+                // boucle pour éviter de me répéter
+                for(let i = 0 ; i <= 1 ; i++){
+                    console.log( "l'auteur a écrit " + tableau[ i ] );
+                }
+            }
+        } ;
+
+        // utiliser les méthodes 
+        
+        auteur.presentation();
+        auteur.oeuvres();
+
+    </script>
+</body>
+</html>
+<!-- 
+    06-this.html
+    // rappel dans le support 
+    
+-->
