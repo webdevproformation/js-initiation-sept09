@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // le protocole 
+        // partie de l'adresse internet = url
+        //  https://google.fr 
+        // https:// => le protocole
+        // google.fr  => domaine 
+
+        let protocole = window.location.protocol ;
+        console.log(protocole);
+
+        // autre solution possible 
+
+        console.log(window.location.protocol);
+
+        // étant donnée que window est l'objet qui contient tout 
+        // ne pas écrire window
+
+        console.log(location.protocol);
+
+        // objet global implicite 
+        // TOUT est associé l'objet window 
+        // automatiquement javascript va le rajouter de lui même avant location
+        // c'est cette dernière syntaxe que l'on va utiliser tout le temps 
+
+    </script>
+    <script>
+        // pas de problème pour avoir plusieurs balises script dans la page !
+        console.log(location.protocol);
+    </script>
+    <script>
+        console.log(location.protocol);
+    </script>
+</body>
+</html>
+<!-- 
+    11-document.html
+-->
