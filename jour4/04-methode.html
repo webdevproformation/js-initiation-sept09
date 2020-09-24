@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 04-methode.html
+
+        // les objets peuvent contenir des propriétés (valeurs)
+        // stocker une grande quantité
+
+        // en plus de pouvoir stocker des valeurs , vous pouvez en + 
+        // stocker des fonctions dans les objets
+
+        let carre = {
+            cote : 4 ,
+            unite : "cm",
+            calculSurface : function(){
+                console.log( "la surface du carré = " + 4 * 4 ) ;
+            } ,  // méthode = variable qui stocke une fonction 
+
+            calculPerimetre : function(){
+                console.log( "le périmètre du carré = " + (4 + 4) * 2 )
+            } // méthode !!
+        } ;
+        // l'objet carre possède :
+        // 2 propriétés = cote et unite
+        // 2 méthodes = calculSurface et calculPerimetre
+
+        let surface = carre.calculSurface();
+        // exécuter les instructions stockées dans la méthode calculSurface stockée dans l'objet carre 
+        // attention ne pas oublier les parenthèses après le nom de la méthode !!!! 
+
+        let aire = carre.calculPerimetre() ;
+        // pour exécuter la fonction il faut l'appeler 
+        // vue que la fonction (méthode) est stockée dans un objet 
+        // il faut objet.methode() !!!! 
+        // en javascript, il est possible de ne pas mettre les ()
+        // aucune erreur et aucune exécution 
+
+    </script>
+</body>
+</html>
