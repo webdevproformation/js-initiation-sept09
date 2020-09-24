@@ -12,7 +12,10 @@
             unite : "cm",
             calculAire : function(){
                 // PI * rayon * rayon
-                let resultat = 3.14 * this.rayon ** 2;
+                let resultat = Math.PI * this.rayon ** 2;
+                resultat = resultat.toFixed(2);
+                // permet de générer le nombre de chiffres
+                // sous la virgule 
                 console.log( "un cercle de rayon " + this.rayon + " a une aire de " + resultat + " " + this.unite + "²");
             }, 
             calculPerimetre : function(){
