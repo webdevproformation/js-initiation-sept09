@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 09-dom-suite.html
+
+        // nous allons désormais écrire dans la page web
+
+        // pour écrire dans la page web
+        // utiliser des nouveaux mots clés
+
+        // window et document 
+        // deux mots clé spéciaux pour modifier les pages web 
+
+
+        // window et document sont des objets 
+        // des objets qui sont générés automatiques dans votre navigateur lorsque vous exécutez votre page web 
+
+        // la variable document contient un objet 
+
+        /* vous avez un objet 
+            {
+                width : 1200
+                height : 800
+                listeP : [] ,
+                methode : function(){}
+                methode2 : function(){}
+            }
+            => tout ce que vous voyez à l'écran 
+        */
+
+        // document global
+        //window 
+
+        //window.document  => travailler dans la page web 
+
+        //window.location => travailler sur la barre d'adresse 
+
+        // window.console => travailler dans la console du navigateur 
+
+        console.log(window.location);
+
+        console.log(window.location.href);
+        
+        // window objet contient tout 
+        // cet objet contient des propriétés => location
+        // location est lui même un objet qui contient des propriétés => href 
+        
+        // attention à la casse = majuscule minuscule
+        console.log(window.Location.href); // undefined 
+        
+        // bien respecter la casse !!!! 
+    </script>
+</body>
+</html>
+<!-- 
+    créer un nouveau fichier 10-exo.html
+
+    1 utiliser l'objet window => 
+    2 afficher dans la console du navigateur le protocole de la page http://
+
+-->
