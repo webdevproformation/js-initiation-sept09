@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let voiture = {
+            marque : "Peugeot",
+            modele : 206 ,
+            cv : 5 ,
+            anneeAchat : 2015
+        } ;
+        
+        // concaténation avec un objet 
+
+        //  J'ai acheté en 2015 une Peugeot 206
+
+        let phrase1 = "J'ai acheté en " + voiture.anneeAchat + " une " + voiture.marque + " " + voiture.modele ;
+        console.log( phrase1 );
+
+        // mon modèle de véhicule dispose de 5 chevaux fiscaux
+
+        let phrase2 = "mon modèle de véhicule dispose de " + voiture.cv + " chevaux fiscaux" ;
+        console.log(phrase2);
+
+        // Les véhicules de 2015 , comme ma 206, doivent circuler uniquement le matin tôt
+
+        let phrase3 = "Les véhicules de " + voiture.anneeAchat + " , comme ma " + voiture.modele + ", doivent circuler uniquement le matin tôt" ;
+        console.log( phrase3 );
+
+    </script>
+</body>
+</html>
