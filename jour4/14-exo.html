@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="first">bonjour</li>
+        <li class="second">hello</li>
+        <li>lorem</li>
+        <li>avant dernier</li>
+        <li id="last">fin</li>
+    </ul>
+    <script>
+        /*
+            sélectionner le troisième élément
+            sélectionner le dernier élement
+            sélectionner le deuxième élément
+        */
+
+        let troisiemeElement = document.getElementsByTagName("li")[2] ;
+        // alternative
+        // let troisiemeElement = document.querySelectorAll("ul li")[2] ;
+        // let troisiemeElement = document.querySelector("ul>li:nth-child(3)");
+        
+        let dernierElement = document.getElementById("last");
+        // alternative
+        // let dernierElement = document.querySelector("#last");
+
+        let deuxiemeElement = document.getElementsByClassName("second")[0] ;
+        // alternative
+        // let deuxiemeElement = document.querySelector(".second") ;
+        // autre alternative
+        // let deuxiemeElement = document.getElementsByTagName("li")[1] ;
+
+    </script>
+</body>
+</html>
