@@ -13,9 +13,11 @@
             calculAire : function(){
                 // PI * rayon * rayon
                 let resultat = Math.PI * this.rayon ** 2;
-                resultat = resultat.toFixed(2);
+                resultat = resultat.toFixed(2); 
                 // permet de générer le nombre de chiffres
                 // sous la virgule 
+
+                // toFixed() avec un F Majuscule 
                 console.log( "un cercle de rayon " + this.rayon + " a une aire de " + resultat + " " + this.unite + "²");
             }, 
             calculPerimetre : function(){
