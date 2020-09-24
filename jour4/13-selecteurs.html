@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        créer plusieurs balises paragraphes id et de class
+        emmet pour générer les id et les class
+        p#element$.item$*6>lorem5
+    -->
+    <p id="element1" class="item1">Lorem ipsum dolor sit amet.</p>
+    <p class="item2">Qui reprehenderit cum illo atque.</p>
+    <p id="element3" class="item3">Temporibus corporis nam excepturi illum?</p>
+    <p id="element4" class="item4">Accusantium molestias asperiores doloribus eos.</p>
+    <p id="element5" class="item5">Illum itaque nihil delectus minima.</p>
+    <p id="element6" class="item6">Nostrum veritatis eos alias deserunt.</p>
+    <script>
+        // pour récupérer le premier paragraphe
+
+        document.querySelector("#element1") ;
+        document.querySelector(".item1") ;
+
+        // méthode classique 
+        document.getElementById("element1") // ne pas mettre le # dans le selecteur 
+        // fonctionne parfaite MAIS uniquement pour les éléments qui ont un id
+        // pour la deuxième balise je ne peux la sélectionner 
+
+        // pour récupérer le deuxième élément 
+        document.querySelector(".item2") ;
+
+        // vu que l'élément n'a pas d'id => je ne peux utiliser getElementById()
+        document.getElementsByTagName("p")[1] ; // récupérer TOUS les p de la page
+        // si je veux en sélectionner 1 en particulier
+        console.log(document.getElementsByTagName("p")[1]);
+
+        document.getElementsByClassName("item2")[0];
+        console.log(document.getElementsByClassName("item2")[0]);
+        // document.getElementByClassName => ça n'existe pas
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer la page 14-exo.html
+
+    cette page contient une liste  avec 5 éléments
+        premier élément => id first   et le texte bonjour
+        deuxième élément => class second   et texte hello
+        troisième élément => juste un texte lorem 
+        quatrieme élement => jsute ave un texte avant dernier
+        dernier élement => id last et un texte fin 
+
+    dans la balise script 
+
+        sélectionner le troisième élément
+        sélectionner le dernier élement
+        sélectionner le deuxième élément
+    utiliser n'importe quelle méthode querySelector getElementById   getElementsByTagName ou getElementsByClassName
+-->
