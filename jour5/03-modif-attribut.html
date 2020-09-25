@@ -15,11 +15,17 @@
             text-shadow: 5px 5px grey;
             text-decoration: underline;
         }
+        p.warning{
+            color : orange;
+        }
     </style>
 </head>
 <body>
     <!-- p>lorem Emmet -->
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis explicabo voluptas voluptatum inventore similique nam consectetur ad magnam vero, provident a nisi, cupiditate quidem omnis hic natus culpa pariatur harum.</p>
+    <p class="warning">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo totam suscipit eius veniam! Dignissimos ea rerum facere ipsum? Omnis aliquid ex quisquam quos odio molestiae nostrum totam libero itaque et!
+    </p>
 
     <script>
         let p = document.querySelector("p") ;
@@ -32,6 +38,41 @@
         p.style["font-weight"] = 700
         p.style["text-shadow"]  = "5px 5px grey";
         p.style["text-decoration"]  = "underline";*/
+        // plugin => confort 
+        
+        // inverse : enlever le mot warning dans la class que deuxième paragraphe 
+
+        let deuxiemeP = document.querySelectorAll("p")[ 1 ] ;
+        deuxiemeP.classList.remove("warning"); // supprimer la class warning
+        // donc le texte est en rouge (le style par défaut !)
+
     </script>
 </body>
 </html>
+<!-- 
+    créer le fichier 04-exo.html 
+
+    dans le head balise style 
+    dans cette balise 
+        .important {
+            color : red ;
+            font-weight : bold ;
+        }
+        .information{
+            color : blue ;
+            font-style : italic ;
+        }
+
+    dans le body 
+        un h2 avec 3 mots
+        4 paragraphes avec 10 mots chacun 
+        h2 avec la class conclusion et contenant le mot conclusion
+        un paragraphes
+
+    dans la balise <script>
+
+        ajouter pour le 1ère h2 la class important
+        pour le 3eme paragraphe la class information 
+        pour le h2 qui a la class conclusion la class information
+
+-->
