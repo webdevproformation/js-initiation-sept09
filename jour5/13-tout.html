@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header div{
+            overflow: hidden;
+        }
+        header ul{
+            transition: transform 1s;
+            display : flex;
+            padding: 0;
+        }
+        header ul.hide{
+            transform: translateY(-200px);
+        }
+
+        header ul li{
+            list-style: none;
+            margin-right: 10px;
+        }
+
+        .main{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu">Menu</button>
+        <div>
+            <ul>
+                <li>Accueil</li>
+                <li>Présentation</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+    <section class="main"></section>
+    <footer>
+        <form>
+            <input type="email" id="email">
+            <input type="submit" id="btnSubmit">
+        </form>
+        <div class="message"></div>
+    </footer>
+    <script>
+        document.querySelector(".menu").addEventListener("click", function(){
+            document.querySelector("ul").classList.toggle("hide");
+        });
+
+        // le main
+
+        let contenuMain = ""; 
+
+        for(let i = 1 ; i <= 20 ; i++){
+            contenuMain += "<div>" ;
+                contenuMain += "<h2>article " + i + "</h2>" ;
+                contenuMain += "<img src=\"https://via.placeholder.com/400x200\" alt=\"\">" ;
+                contenuMain += "<p>lorem</p>" ;
+            contenuMain += "</div>" ;
+        }
+
+        document.querySelector(".main").innerHTML = contenuMain ;
+
+        // le footer
+
+        document.querySelector("#btnSubmit").addEventListener("click", function(e){
+            e.preventDefault();
+            let email = document.querySelector("#email").value ;
+            if(email == ""){
+                document.querySelector(".message").innerHTML = "veuillez compléter le champ email";
+            }
+            else 
+            {
+                document.querySelector(".message").innerHTML = "vous êtes désormais abonné à la newsletter";
+                setTimeout(function(){
+                    document.querySelector("form").submit();
+                }, 2000)
+            }
+        });
+    </script>
+</body>
+</html>
