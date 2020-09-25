@@ -18,5 +18,64 @@
     <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ratione consectetur aut libero molestiae soluta ut labore, laudantium cumque excepturi id inventore laborum eius quas! Unde a minus ad fugit!</p>
     <button class="action2">Action 2</button>
     <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum debitis, in natus deleniti sequi aut vero modi consectetur accusamus beatae, officia saepe ad! Fugiat possimus dolorum ipsam veniam, voluptatem vitae.</p>
+    <script>
+        // je veux que lorsque je clique sur le bouton qui a la class action1 
+        // j'ajoute au paragraphe qui a la class p1 la class warning 
+
+        // addEventListener() => méthode qui permet d'écouter un événement 
+        // méthode === function d'un objet
+        // deux arguments 
+        // nom de l'événement  click
+        // l'action que l'on veut faire => callback function(){}
+        // lorsque je clique sur l'élement .action1 => exécute le callback (deuxième paramètre)
+        document.querySelector(".action1").addEventListener("click" , function(){ 
+
+                // j'ajoute au paragraphe qui a la class p1 la class warning 
+                document.querySelector(".p1").classList.add("warning") ;
+        } );
+
+        // à la suite dans la même page 
+
+        // réaliser l'action suivante :
+        // si je clique sur l'élément qui a la class action2 =>
+        // ajouter à la balise qui a la class p2 la class danger 
+
+        document.querySelector(".action2").addEventListener( "click" , function(){
+            document.querySelector(".p2").classList.add("danger");
+        });
+
+        // liste des événements que vous pouvez écrire 
+        // dans le support js-dom => chapitre qui s'appelle événements => liste complète de tous les événements disponibles
+    </script>
 </body>
 </html>
+
+<!-- 
+    créer le fichier 06-exo.html
+    style   
+        .bordered{
+            border : 1px solid black ;
+            padding : 5px 10px;
+        }
+        .important {
+            color : red;
+            font-size : 23px;
+        }
+    body 
+        button class action1 contient le texte Action 1
+        button class action2 contient le texte Action 2
+
+        p  contient 20 mots 
+
+            les 4 premiers mots => entouré d'une balise span
+            le dernier mot  => entouré d'une balise span 
+        
+            dans la balise script effectuer les actions suivantes :
+
+            lorsque je clique sur le bouton qui a class action1 => appliquer le style bordered sur la première span dans la balise p 
+
+             lorsque je clique sur le bouton qui a class action2 => 
+                appliquer le style bordered sur la dernier span dans la balise p  
+                appliquer le style important sur la dernier span dans la balise p 
+
+-->
