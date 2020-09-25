@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p class="bonjour">hello</p>
+    <a href=""></a>
+
+    <script>
+        // vu que je n'ai d'une seule modification sur la balise h1 de la page
+        // écrit 1 seule instruction
+        document.querySelector("h1").innerHTML = "découverte du DOM" ;
+
+        // 3 instructions 
+        let p = document.querySelector("p");
+        p.innerHTML = "Introduction à la manipulation du DOM";
+        p.style["margin-top"] = "60px" ; // string comme valeur 
+                                         // attention il faut que 60 soit coller à px
+        p.style["color"] = "red" ;
+        // non c'est une limite de javascript 6 et 5 = Js de base = Js Vanilla => tu es obligé d'avoir 1 instruction
+        // par règle css 
+        // jQuery => 
+        p.style.color = "red";
+
+        let a = document.querySelector("a");
+        a.innerHTML = "lire la suite ..."; 
+        a.style["text-decoration"] = "none"; // j'utilise avant tout cette manière 
+
+        // autre syntaxe possible pour la ligne 26
+        a.style.textDecoration = "none" ;
+        
+
+    </script>
+</body>
+</html>
