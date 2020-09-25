@@ -10,11 +10,27 @@
         }
         p.success{
             color : green;
+            font-size: 30px;
+            font-weight: 700;
+            text-shadow: 5px 5px grey;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <!-- p>lorem Emmet -->
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis explicabo voluptas voluptatum inventore similique nam consectetur ad magnam vero, provident a nisi, cupiditate quidem omnis hic natus culpa pariatur harum.</p>
+
+    <script>
+        let p = document.querySelector("p") ;
+        // console.log(p);
+        p.classList.add("success");  // nous venons d'ajouter la class success à la balise p
+        // classList.add() => super pratique lorsque l'on veut ajouter plus de 3 styles simultanément sur balise 
+        // j'utilise simulténamenet du html / js et css 
+        /*p.style[] = "red"
+        p.style[]
+        p.style[]
+        p.style[] */
+    </script>
 </body>
 </html>
