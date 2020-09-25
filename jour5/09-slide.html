@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* le style pour la fin */
+    </style>
+</head>
+<body>
+    <!-- 
+        09-slide.html 
+        via un effet de slide glisser 
+    -->
+    <button class="menu">Menu</button>
+    <div>
+        <!-- ul>li*3>lorem1 -->
+        <ul>
+            <li>Accueil</li>
+            <li>Présentation</li>
+            <li>Nous contacter</li>
+        </ul>
+    </div>
+    <style>
+        div{
+            overflow: hidden;
+        }
+        ul{
+            transition: transform 2s;
+        }
+        ul.hide{
+            transform: translateX(-200px);
+        }
+    </style>
+    <!--  
+        je veux que lorsque je clique sur le bouton class menu glisser vers la droite pour apparaitre 
+        je reclique glisser vers la gauche pour disparaitre
+    -->
+    <script>
+        document.querySelector(".menu").addEventListener("click", function(){
+            document.querySelector("ul").classList.toggle("hide");
+        });
+    </script>
+</body>
+</html>
