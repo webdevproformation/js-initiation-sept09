@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form id="formulaireContact">
         <div>
             <label for="nom">Votre nom</label>
             <input type="text" id="nom">
@@ -29,7 +29,7 @@
         document.querySelector("#btnSubmit").addEventListener("click", function(e){
             e.preventDefault(); // bloquer le rechargement automatique du formulaire
 
-            let nom = document.querySelector("#nom").value ;
+            /*let nom = document.querySelector("#nom").value ;
             let age = document.querySelector("#age").value ;
             let email = document.querySelector("#email").value ;
 
@@ -41,8 +41,64 @@
                 // PHP => que l'on va traiter la demande 
             } else {
                 document.querySelector(".message").innerHTML = "Formulaire non conforme";
+            }*/
+
+            // utiliser une boucle 
+            // autre manière de résoudre le problème 
+
+            let error = [];
+
+            let listeInputs = document.querySelectorAll("input[type=\"text\"] , input[type=\"email\"] , input[type=\"number\"]");
+
+            // let listeInputs = document.querySelectorAll("#nom", "#email", "#age");
+
+            for(let i = 0 ; i < 3; i++){
+                if(listeInputs[i].value == ""){
+                    error.push("erreur sur le champ")
+                }
             }
-        })
+
+            if(error.length === 0 ){
+                document.querySelector(".message").innerHTML = "Merci !";
+                setTimeout( function(){
+                    document.querySelector("form").submit();
+                } , 2000);
+            }else{
+                document.querySelector(".message").innerHTML = "Formulaire non conforme";
+            }
+        });
     </script>
 </body>
 </html>
+<!-- 
+    13-tout.html
+    // le plus compliqué => toutes les utiliser en même temps ! 
+
+    // => je vous donne un corrigé
+    dans la balise body 
+        header
+          button class menu et qui contient le texte Menu
+          div
+            liste 3 éléments Accueil / Présentation / Contact 
+        section class main 
+        footer 
+            formulaire 1 seul champ email + un bouton 
+            div class message 
+
+    en javascript 
+        lorsque vous cliquer sur le bouton menu => glisser vers le haut la liste qui contient
+        Accueil / Présentation / Contact 
+        et si vous recliquer => glisser la liste vers le bas
+        ------------
+        remplir le balise qui a la class main avec le contenu suivant :
+        <div>
+            <h2>article 1</h2>
+            <img src="https://via.placeholder.com" alt="">
+            <p>lorem</p>
+        </div>
+        => 20 articles
+        ------------- 
+        si le champ email est vide => dans le champ qui a la class div class message  
+        "veuillez compléter le champ email"
+        si le champ email est complété => vous êtes désormais abonné à la newsletter dans 
+-->
