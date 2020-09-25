@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display: none; /* masquer un élément à 100% de la page web */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <button class="action1">Action 1</button>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At voluptas eos vitae laudantium, deserunt nihil harum! Blanditiis, repellat saepe minima numquam officia necessitatibus dignissimos eius, quae nemo, provident repudiandae velit?</p>
+
+    <button class="action2">Action 2</button>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At voluptas eos vitae laudantium, deserunt nihil harum! Blanditiis, repellat saepe minima numquam officia necessitatibus dignissimos eius, quae nemo, provident repudiandae velit?</p>
+    <script>
+        // si je clique une première fois sur le bouton action 1 => masque le paragraphe p1
+        // si je reclique sur le bouton action1 => afficher le paragraphe p1 
+
+        document.querySelector(".action1").addEventListener( "click" , function(){
+            document.querySelector(".p1").classList.toggle("hide");
+            // la méthode toggle() => si c'est la class hide présente => enlever
+            // la méthode toggle() => si c'est la class hide est absente  => ajouter
+        });
+    </script>
+</body>
+</html>
