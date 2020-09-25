@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bordered{
+            border : 1px solid black ;
+            padding : 5px 10px;
+        }
+        .important {
+            color : red;
+            font-size : 23px;
+        }
+    </style>
+</head>
+<body>
+        <!-- astuce avec Emmet  button.action$*2>{Action $} -->
+        <button class="action1">Action 1</button>
+        <button class="action2">Action 2</button>
+        <p><span>Lorem ipsum dolor sit</span> amet consectetur adipisicing elit. Eos error mollitia repudiandae temporibus! Ex eveniet amet necessitatibus sed nam <span>molestias.</span></p>
+        <script>
+            document.querySelector(".action1").addEventListener("click", function(){
+                document.querySelectorAll("p span")[ 0 ].classList.add("bordered");
+                //document.querySelectorAll("span")[ 0 ].classList.add("bordered");
+            });
+
+            document.querySelector(".action2").addEventListener("click", function(){
+                let lastSpan = document.querySelectorAll("p span")[ 1 ] ;
+               // lastSpan.classList.add("bordered");
+               //  lastSpan.classList.add("important");
+                // autre solution possible 
+                lastSpan.classList.add("bordered" , "important") ; 
+                // lastSpan.classList= "bordered"  ; 
+                // lastSpan.classList= "important"  ; 
+            })
+        </script>
+    </body>
+</html>
+
+<!-- 
+    07-animation.html 
+-->
