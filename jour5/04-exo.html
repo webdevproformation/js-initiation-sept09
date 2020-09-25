@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* un peu de css 1*/
+        .important{
+            color : red ;
+            font-weight : bold ;
+        }
+        .information{
+            color : blue ;
+            font-style : italic ;
+        }
+    </style>
+</head>
+<body>
+    <!-- 2 ajouter du html -->
+    <h2>Lorem, ipsum dolor.</h2> <!-- h2>lorem3 -->
+    <!-- p*4>lorem10 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, explicabo?</p>
+    <p>Molestiae sint nemo perspiciatis repellendus quis pariatur beatae fugit laborum.</p>
+    <p>Cupiditate adipisci quasi quia explicabo quibusdam ex maxime iure quisquam.</p>
+    <p>Nostrum mollitia consequuntur est excepturi quisquam iste ullam, nihil a?</p>
+    <!-- h2.conclusion>{Conclusion} -->
+    <h2 class="conclusion">Conclusion</h2>
+    <!-- p>lorem -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit excepturi tenetur alias enim, porro quidem, dolor illum exercitationem aperiam est architecto maiores sequi sunt laborum perspiciatis a molestiae voluptas provident!</p>
+    <script>
+        // 3 dernière partie, du javascript pour DYNAMISER ma page html 
+        // ajouter pour le 1ère h2 la class important
+        document.querySelectorAll("h2")[0].classList.add("important");
+
+        // pour le 3eme paragraphe ajouter la class information 
+        document.querySelectorAll("p") [ 2 ].classList.add("information") ;
+
+        // pour le h2 qui a la class conclusion ajouter la class information
+        document.querySelector(".conclusion").classList.add("information");
+    </script>
+</body>
+</html>
