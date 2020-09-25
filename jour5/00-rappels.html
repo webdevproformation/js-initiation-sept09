@@ -19,3 +19,110 @@ le DOM
 url : https://formation.webdevpro.net/js-dom/
 login : dom
 mdp : dom 
+
+---------- 
+
+Des questions sur les exos les concepts vus hier ??? 
+
+=> deux derniers exos (Lancinet)
+
+=> la syntaxe général (Hayet)
+
+A partir de hier midi => deuxième partie du cours 
+=> DOM : Document Object Model
+
+=> https://formation.webdevpro.net/js-dom dans le chapitre window => image 
+
+aperçu de toutes les méthodes et propriétés utilisables sur le DOM 
+
+=> Beaucoup !! plus de 100 
+
+-------------------------
+=> la syntaxe général (Hayet)
+
+=> lorsque tu veux modifier une page <=> comment fonctionnent les objets en javascript 
+
+un objet :
+
+let document = {
+    all : ["html" , "head" , "body"],
+    methode : function(){  .... }
+}
+
+document.all  ; récupérer des valeurs 
+document.all[0]  ; 
+document.methode() ; exécuter une méthode de l'objet 
+
+-------------------------
+
+Serguei récapitulatif de l'ensemble des méthodes / propriétés que l'on a vu hier 
+
+beaucoup // dans la réalité => petites nombre de méthodes / propriétés 
+
+l'objet global :
+
+window // contient TOUT 
+
+window.location // la barre d'adresse
+window.document // le contenu dans le nagivateur
+window.console // la console 
+
+window.location.protocol => http: string
+window.location.href => adresse complète  string
+
+remarque window => TOUT 
+pas besoin de l'écrire window ??? javascript le met automatiquement
+
+location.protocol => http: string
+location.href => adresse complète  string
+
+-------------------------
+
+window.document
+
+// l'objet central que nous allons utiliser pour modifier 
+// les pages web 
+
+-------------------------
+
+document
+
+document.all => liste de toutes les balises html écrites dans la page 
+
+5 méthodes de l'objet document => Selectionner une balise en particulier 
+document.querySelector( ) // js version 6
+document.querySelectorAll( )[ index ] // js version 6  // retourne tableau 
+
+// vous pouvez mettre des sélecteurs css dans les parenthèses => très flexibles
+document.getElementById( ) // avec la création de javascript 
+document.getElementsByTagName( )[ index ] => tableau  
+document.getElementsByClassName( )[ index ] => tableau
+
+-------------------------
+.innerHTML
+.style[""]
+
+// remplir une balise html 
+document.querySelector("h1").innerHTML = "change le contenu de la balise" ;
+
+console.log(document.querySelector("h1").innerHTML)
+
+// changer le style d'une balise html => taille de police 40px
+document.querySelector("h1").style["font-size"] = "40px";
+
+-------------------------
+
+créer le fichier 01-exo.html 
+
+un h1 
+un p qui a la class bonjour et contient le texte hello
+lien hypertexte une balise a 
+
+une balise script qui réalise les modifications suivantes :
+
+sélectionner la balise h1 et modifier son contenu par : découverte du DOM 
+séecltionner la balise p et modifier son contenu Introduction à la manipulation du DOM +
+        modifier son style texte en rouge et marge top de 60px
+
+sélctionner le lien hyperttexte modifier son contenu => lire la suite ... + 
+enlever le soulignement via javascript
