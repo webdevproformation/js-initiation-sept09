@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 11-formulaire.html -->
+    <!-- formulaire de commentaire que vous pouvez trouver dans les blogs 
+        un premier champ => nom
+        un deuxième champ => son commentaire
+        un dernier champ => bouton cliquer "pour soumettre le formulaire"
+        cas => pouvez vous réaliser ce formulaire ci dessous 
+    -->
+    <form>
+        <div>
+            <label for="nom">Votre nom </label>
+            <input type="text" id="nom">
+        </div>
+        <div>
+            <label for="commentaire">Votre commentaire</label> <br>
+            <textarea id="commentaire" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" id="submit">
+        </div>
+    </form>
+    <div class="message"></div>
+    <!-- en javacript => 
+    si les deux champs input + textarea sont complétés 
+    => remplir l'élement avec la class message => "merci pour votre message"
+        sinon veuillez compléter les deux champs !!!    -->
+    <script>
+         //let userLang = navigator.language || navigator.userLanguage; 
+         //alert ("The language is: " + userLang);
+
+         // PHP => gettext (activer dans php.ini)
+         let textes = {
+             fr : {
+                 h1 : "titre 1",
+                 message : "bonjour"
+             },
+             en : {
+                 h1 : "title 1",
+                 message : "hello"
+             }
+         }
+        document.querySelector("#submit").addEventListener("click", function(e){
+            // attention étant donné que l'on a un formulaire 
+            // clique sur le bouton => effet rechargement de page 
+            // il faut rajouter une ligne pour bloquer le rechargement de page 
+            e.preventDefault(); // bloquer le rechargement de page 
+            // à utiliser sur les boutons de formulaire !!! 
+            let inputNom = document.querySelector("#nom");
+            let textareaCommentaire = document.querySelector("#commentaire");
+
+            //console.log(inputNom.value ,  textareaCommentaire.value);
+
+            // langue 
+
+            if( inputNom.value != "" && textareaCommentaire.value != ""){
+                document.querySelector(".message").innerHTML = "merci pour le message";
+                // submit via du js 
+                setTimeout( function(){
+                    document.querySelector("form").submit();
+                }, 2000);
+            } else {
+                document.querySelector(".message").innerHTML = "veuillez compléter les deux champs !";
+            }
+        })
+    </script>
+</body>
+</html>
+
+<!-- -->
