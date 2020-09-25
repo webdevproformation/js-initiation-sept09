@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="first"></section>
+    <script>
+        let contenu = "";
+
+        for(let i = 1 ; i <= 3 ; i++){
+            // 3 fois 
+            contenu += "<div>"  ; // le symbole += concaténer
+            contenu +=  "<h2>article " + i + "</h2>" ;
+            contenu +=  "<img src=\"https://via.placeholder.com/400x200\" alt=\"\">" ; 
+            // ne pas oublier d'échapper les \ dans la chaine de caractère
+            // ( ) => pour faire de calcul
+            // \ => échapper un caractère 
+            // contenu +=  '<img src="https://via.placeholder.com/400x200" alt="">' ; 
+            contenu +=  "</div>"; 
+        }
+        
+        document.querySelector(".first").innerHTML = contenu ;
+    </script>
+</body>
+</html>
+
+<!-- 
+    03-modif-attribut.html
+-->
