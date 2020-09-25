@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*style pour la fin */
+        div{
+            overflow: hidden;
+        }
+        img{
+            transition: transform 1.5s;
+        }
+        img.slide{
+            /* glisser vers la gauche*/
+            transform: translateX(-400px);
+            /*glisser vers le haut*/
+            transform: translateY(-200px);
+            /*glisser vers le bas*/
+            transform: translateY(210px);
+            /*glisser vers la droite*/
+            transform: translateX(2400px);
+        }
+    </style>
+</head>
+<body>
+    <button class="action">Action</button>
+    <div>
+        <img src="https://via.placeholder.com/400x200" alt="">
+    </div>
+    <script>   
+        document.querySelector(".action").addEventListener("click", function(){
+            document.querySelector("img").classList.toggle("slide");
+        });
+    </script>
+</body>
+</html>
