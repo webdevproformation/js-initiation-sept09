@@ -13,17 +13,17 @@
         un dernier champ => bouton cliquer "pour soumettre le formulaire"
         cas => pouvez vous réaliser ce formulaire ci dessous 
     -->
-    <form>
+    <form id="form" method="post">
         <div>
             <label for="nom">Votre nom </label>
             <input type="text" id="nom">
         </div>
         <div>
             <label for="commentaire">Votre commentaire</label> <br>
-            <textarea id="commentaire" rows="10"></textarea>
+            <textarea id="commentaire" rows="2"></textarea>
         </div>
         <div>
-            <input type="submit" id="submit">
+            <input type="submit" id="btnSubmit">
         </div>
     </form>
     <div class="message"></div>
@@ -46,7 +46,7 @@
                  message : "hello"
              }
          }
-        document.querySelector("#submit").addEventListener("click", function(e){
+        document.querySelector("#btnSubmit").addEventListener("click", function(e){
             // attention étant donné que l'on a un formulaire 
             // clique sur le bouton => effet rechargement de page 
             // il faut rajouter une ligne pour bloquer le rechargement de page 
@@ -63,7 +63,7 @@
                 document.querySelector(".message").innerHTML = "merci pour le message";
                 // submit via du js 
                 setTimeout( function(){
-                    document.querySelector("form").submit();
+                    document.getElementById("form").submit();
                 }, 2000);
             } else {
                 document.querySelector(".message").innerHTML = "veuillez compléter les deux champs !";
@@ -82,10 +82,12 @@
         deuxième champ input id age
         troisième champ input id email 
         bouton avec class submit
+    les balises html input / textarea => ce qui est saisit dans le champ .value
+    p h1 li section div .... .innerHTML 
     
     un paragraphe avec la class message vide par défaut
 
-    en javascript lorsque vous cliquez sur le bouton submit 
+    en javascript, lorsque vous cliquez sur le bouton submit 
 
     vérifier que les 3 champs sont complétés
 
@@ -93,5 +95,7 @@
 
     sinon => remplir la balise avec la class message avec le texte , formulaire non conforme !
 
-
--->
+    en PHP : 
+        $_POST["nom"] != ""
+        $_POST["commentaire"] != ""
+    -->

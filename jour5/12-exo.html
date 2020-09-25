@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom">
+        </div>
+        <div>
+            <label for="age">Votre age</label>
+            <input type="number" id="age">
+        </div>
+        <div>
+            <label for="email">Votre email</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <input type="submit" id="btnSubmit">
+        </div>
+    </form>
+    <!--  c'est javascript qui va remplir ce champ lorsque j'ai cliqué sur le bouton submit-->
+    <div class="message"></div>
+    <script>
+        document.querySelector("#btnSubmit").addEventListener("click", function(e){
+            e.preventDefault(); // bloquer le rechargement automatique du formulaire
+
+            let nom = document.querySelector("#nom").value ;
+            let age = document.querySelector("#age").value ;
+            let email = document.querySelector("#email").value ;
+
+            if(nom != "" && age != "" && email != ""){
+                document.querySelector(".message").innerHTML = "Merci !";
+                setTimeout( function(){
+                    document.querySelector("form").submit();
+                } , 2000); // envoyer le contenu du formulaire au serveur 
+                // PHP => que l'on va traiter la demande 
+            } else {
+                document.querySelector(".message").innerHTML = "Formulaire non conforme";
+            }
+        })
+    </script>
+</body>
+</html>
