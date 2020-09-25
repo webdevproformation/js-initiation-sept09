@@ -8,8 +8,6 @@
         .hide{
             display: none; /* masquer un élément à 100% de la page web */
         }
-
-        
     </style>
 </head>
 <body>
@@ -18,6 +16,17 @@
 
     <button class="action2">Action 2</button>
     <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At voluptas eos vitae laudantium, deserunt nihil harum! Blanditiis, repellat saepe minima numquam officia necessitatibus dignissimos eius, quae nemo, provident repudiandae velit?</p>
+
+    <style>
+        .p2{
+            /* en css3 => transition */
+            /* lorsque je clique que le bouton action2 => augmenter la taille du texte dans la balise .p2*/
+            transition: font-size 2s;
+        }
+        .p2.big{
+            font-size: 40px;
+        }
+    </style>
     <script>
         // si je clique une première fois sur le bouton action 1 => masque le paragraphe p1
         // si je reclique sur le bouton action1 => afficher le paragraphe p1 
@@ -27,6 +36,12 @@
             // la méthode toggle() => si c'est la class hide présente => enlever
             // la méthode toggle() => si c'est la class hide est absente  => ajouter
         });
+
+        document.querySelector(".action2").addEventListener("click", function(){
+            // lorsque je clique 1 fois => ajouter la class big // recliquer enlever la class big
+            document.querySelector(".p2").classList.toggle("big");
+        }); 
+        // avant css3 => setTimout()
     </script>
 </body>
 </html>
